@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#100b20"><title>CRAZI Community</title>
+<style>
+:root{--bg:#0b0715;--panel:rgba(255,255,255,.075);--line:rgba(255,255,255,.13);--txt:#f7f1ff;--muted:#b8a9cc;--p:#a855f7;--p2:#6d28d9;--pink:#ec4899;--shadow:0 20px 60px #0008}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#482078 0,transparent 40%),radial-gradient(ellipse at 95% 35%,#24114b 0,transparent 38%),var(--bg);color:var(--txt);font-family:Inter,system-ui,"Noto Sans Bengali",sans-serif;min-height:100vh}
+button,input,textarea,select{font:inherit}button{cursor:pointer;color:white;border:1px solid var(--line);background:linear-gradient(135deg,#9333ea,#6d28d9);padding:11px 16px;border-radius:14px;box-shadow:0 8px 25px #7c3aed40;transition:.2s}button:hover{transform:translateY(-2px);filter:brightness(1.12)}button.secondary{background:#ffffff10;box-shadow:none}button.danger{background:#be123c}button:disabled{opacity:.5;cursor:not-allowed}
+header{position:sticky;top:0;z-index:5;backdrop-filter:blur(24px);background:#100b20c9;border-bottom:1px solid var(--line);padding:12px max(16px,calc((100% - 1100px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-size:21px;font-weight:900;letter-spacing:1px}.brand span{color:#c084fc}.status{font-size:11px;color:#d8b4fe}
+.wrap{max-width:1100px;margin:24px auto;padding:0 16px 100px}.hero{padding:28px;border:1px solid #ffffff20;border-radius:28px;background:linear-gradient(130deg,#8b5cf633,#ec489922),#ffffff09;backdrop-filter:blur(25px);box-shadow:var(--shadow);position:relative;overflow:hidden;animation:rise .6s ease}.hero:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:#c084fc25;filter:blur(12px);right:-50px;top:-100px}.hero h1{font-size:clamp(30px,6vw,52px);margin:5px 0}.hero p{color:var(--muted);max-width:620px;line-height:1.7}.grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;margin-top:20px}.glass,.post,.sidecard{background:var(--panel);border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(22px);box-shadow:var(--shadow)}.glass{padding:18px}.side{display:grid;gap:14px;align-content:start}.sidecard{padding:17px}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:8px 0 14px}.sectionhead h2{font-size:19px;margin:0}.muted{color:var(--muted);font-size:13px}.field{width:100%;background:#0906129c;border:1px solid var(--line);color:white;padding:13px 14px;border-radius:13px;outline:none;margin:6px 0}.field:focus{border-color:#c084fc;box-shadow:0 0 0 3px #a855f733}textarea.field{min-height:100px;resize:vertical}.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}.post{padding:17px;margin:13px 0;animation:rise .35s ease}.posthead{display:flex;justify-content:space-between;gap:10px;align-items:center}.avatar{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#c084fc,#7c3aed);font-weight:900}.author{display:flex;align-items:center;gap:10px}.post p{white-space:pre-wrap;line-height:1.65}.post img{max-width:100%;max-height:440px;object-fit:contain;border-radius:15px;margin-top:8px}.comment{padding:10px 12px;background:#ffffff0b;border-radius:12px;margin:7px 0;font-size:13px}.nav{display:flex;gap:7px;flex-wrap:wrap}.nav button{padding:9px 12px;font-size:13px}.hidden{display:none!important}.pill{display:inline-block;padding:4px 9px;border-radius:20px;background:#a855f733;color:#e9d5ff;font-size:11px}.empty{text-align:center;padding:30px;color:var(--muted)}.bottom{position:fixed;bottom:0;left:0;right:0;z-index:4;padding:10px;background:#100b20d9;backdrop-filter:blur(22px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:8px}.bottom button{font-size:12px;padding:9px 12px}.toast{position:fixed;top:75px;left:50%;transform:translateX(-50%);z-index:20;background:#281544;border:1px solid #c084fc66;padding:12px 18px;border-radius:14px;display:none;box-shadow:var(--shadow)}.modal{position:fixed;inset:0;background:#05030bd9;z-index:15;display:grid;place-items:center;padding:18px}.modalbox{width:min(520px,100%);max-height:90vh;overflow:auto;background:#1b1030;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--shadow)}.modalbox h2{margin-top:0}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@media(max-width:800px){.grid{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}}@media(max-width:520px){.hero{padding:21px}.side{grid-template-columns:1fr}.wrap{margin-top:15px}.bottom{justify-content:space-around}.bottom button{padding:9px 8px}}
+
+/* CRAZI V2 — premium animated liquid-glass layer */
+:root{--bg:#080512;--panel:rgba(30,18,52,.58);--line:rgba(226,190,255,.19);--txt:#fcf8ff;--muted:#c7b5dc;--p:#c084fc;--p2:#7c3aed;--pink:#f0abfc;--shadow:0 24px 80px #0009}
+body{background:radial-gradient(ellipse at 10% 10%,#6126a855,transparent 34%),radial-gradient(ellipse at 88% 20%,#a21caf35,transparent 30%),radial-gradient(ellipse at 50% 100%,#4c1d9540,transparent 45%),#080512;background-attachment:fixed;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;z-index:-1;border-radius:50%;pointer-events:none;filter:blur(70px);opacity:.42;animation:orbFloat 15s ease-in-out infinite alternate}
+body:before{width:270px;height:270px;background:#9333ea;top:12%;left:-120px}
+body:after{width:300px;height:300px;background:#c026d3;right:-140px;bottom:5%;animation-delay:-6s}
+@keyframes orbFloat{to{transform:translate3d(70px,-55px,0) scale(1.18)}}
+header{background:rgba(10,6,20,.72);border-bottom:1px solid #e9d5ff20;box-shadow:0 10px 45px #0004}
+.brand{font-size:23px;letter-spacing:2px;text-shadow:0 0 24px #c084fc88}.brand span{color:#e9d5ff}
+.hero{isolation:isolate;border:1px solid #e9d5ff38;background:linear-gradient(125deg,#a855f733,#6d28d933 45%,#ec489922),rgba(255,255,255,.055);box-shadow:0 30px 90px #0008,inset 0 1px #fff2;transform-style:preserve-3d}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 20%,#ffffff12 42%,transparent 62%);transform:translateX(-100%);animation:glassShine 8s ease-in-out infinite}
+.hero:after{width:280px;height:280px;background:radial-gradient(circle,#e9d5ff40,transparent 68%);filter:blur(5px);animation:orbFloat 9s ease-in-out infinite alternate}
+@keyframes glassShine{0%,55%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
+.hero h1{letter-spacing:-1.5px;text-shadow:0 8px 35px #0006}
+.glass,.post,.sidecard,.modalbox{background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.035));border:1px solid rgba(233,213,255,.19);box-shadow:0 20px 65px #0007,inset 0 1px #ffffff12;backdrop-filter:blur(28px) saturate(145%)}
+.glass,.post,.sidecard{transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
+.post:hover,.sidecard:hover{transform:translateY(-3px);border-color:#c084fc66;box-shadow:0 25px 70px #0008,0 0 30px #9333ea18}
+button{background:linear-gradient(135deg,#c084fc,#7c3aed 65%,#6d28d9);border:1px solid #e9d5ff50;box-shadow:0 9px 28px #7c3aed55,inset 0 1px #ffffff55;font-weight:700;letter-spacing:.1px}
+button:hover{box-shadow:0 13px 36px #9333ea88,inset 0 1px #ffffff70;transform:translateY(-3px) scale(1.015)}
+button:active{transform:translateY(0) scale(.97)}
+button.secondary{background:linear-gradient(145deg,#ffffff17,#ffffff08);border-color:#ffffff25;box-shadow:inset 0 1px #ffffff12}
+.field{background:rgba(8,4,18,.62);border:1px solid #e9d5ff25;box-shadow:inset 0 2px 12px #0004;transition:.2s}
+.field:focus{border-color:#d8b4fe;box-shadow:0 0 0 4px #a855f72b,0 0 25px #a855f722}
+.pill{background:linear-gradient(120deg,#a855f744,#ec489933);border:1px solid #e9d5ff35;color:#f3e8ff;box-shadow:0 0 20px #a855f71a}
+.avatar{box-shadow:0 7px 22px #9333ea66,inset 0 1px #fff8}
+.post{border-radius:25px;padding:19px}
+.post img{border:1px solid #ffffff20;box-shadow:0 15px 40px #0006}
+.bottom{background:rgba(10,6,20,.82);backdrop-filter:blur(28px) saturate(150%);border-top:1px solid #e9d5ff25;box-shadow:0 -10px 40px #0005}
+.bottom button{border-radius:13px}
+.modal{backdrop-filter:blur(12px)}.modalbox{background:linear-gradient(145deg,#28143f,#130b23);animation:modalIn .25s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
+.toast{background:linear-gradient(135deg,#32164d,#1b1030);border:1px solid #d8b4fe66;box-shadow:0 15px 50px #0008}
+.empty{border:1px dashed #d8b4fe30;border-radius:18px;background:#ffffff05;margin:12px 0}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+
+
+/* CRAZI V3 — motion-rich purple glass polish */
+html{scroll-behavior:smooth}
+::selection{background:#c084fc66;color:#fff}
+.hero{animation:heroEnter .8s cubic-bezier(.2,.8,.2,1) both}
+@keyframes heroEnter{0%{opacity:0;transform:perspective(900px) rotateX(7deg) translateY(24px) scale(.98);filter:blur(5px)}100%{opacity:1;transform:none;filter:none}}
+.hero h1{background:linear-gradient(100deg,#fff 8%,#e9d5ff 42%,#c084fc 72%,#fff);background-size:220% auto;color:transparent;background-clip:text;-webkit-background-clip:text;animation:titleFlow 7s linear infinite}
+@keyframes titleFlow{to{background-position:220% center}}
+.glass,.post,.sidecard{position:relative;overflow:hidden}
+.glass:before,.post:before,.sidecard:before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(125deg,#fff0 15%,#fff1 35%,#fff0 55%);transform:translateX(-130%);transition:transform .8s ease}
+.glass:hover:before,.post:hover:before,.sidecard:hover:before{transform:translateX(130%)}
+.post{animation:cardEnter .48s cubic-bezier(.2,.75,.25,1) both}
+.post:nth-child(2){animation-delay:.06s}.post:nth-child(3){animation-delay:.12s}.post:nth-child(4){animation-delay:.18s}
+@keyframes cardEnter{from{opacity:0;transform:translateY(17px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
+.sectionhead h2{letter-spacing:-.4px}
+.field,button,.post,.sidecard{will-change:transform}
+button:focus-visible,.field:focus-visible{outline:2px solid #e9d5ff;outline-offset:3px}
+.avatar{position:relative;isolation:isolate}
+.avatar:after{content:"";position:absolute;inset:-3px;border-radius:15px;border:1px solid #e9d5ff70;animation:avatarPulse 3s ease-in-out infinite;z-index:-1}
+@keyframes avatarPulse{50%{transform:scale(1.12);opacity:.25}}
+.pill{letter-spacing:.45px}
+.bottom button{min-width:66px}
+#feed .empty{padding:38px 20px}
+#deviceState{box-shadow:0 0 22px #a855f733}
+@media(max-width:520px){.hero h1{font-size:36px}.hero p{font-size:14px}.post{padding:15px}.glass{padding:15px}}
+
+</style>
+</head>
+<body>
+<header><div><div class="brand">CRAZI<span>.</span></div><div class="status">COMMUNITY • CREATE • LEARN</div></div><div class="nav"><button class="secondary" onclick="openRecovery()">Recovery</button><button onclick="go('admin')">Admin</button></div></header>
+<div class="wrap">
+<section class="hero"><span class="pill">WELCOME TO CRAZI COMMUNITY</span><h1>Build. Share. <span style="color:#d8b4fe">Grow.</span></h1><p>তোমার আইডিয়া, প্রশ্ন, coding journey এবং creative কাজ কমিউনিটির সঙ্গে শেয়ার করো। অ্যাকাউন্ট ছাড়াই শুরু করো—Recovery Key নিরাপদে সংরক্ষণ করো।</p><div class="actions"><button onclick="document.getElementById('composer').scrollIntoView({behavior:'smooth'})">＋ নতুন পোস্ট</button><button class="secondary" onclick="go('apply')">কোডিং শেখার আবেদন</button></div></section>
+<div class="grid"><main>
+<section id="homeView"><div class="sectionhead"><h2>Community Feed</h2><button class="secondary" onclick="loadPosts()">↻ Refresh</button></div>
+<div class="glass" id="composer"><h3 style="margin-top:0">তুমি কী শেয়ার করতে চাও?</h3><textarea id="postText" class="field" placeholder="তোমার আইডিয়া বা প্রশ্ন লিখো..."></textarea><input id="postImage" type="file" accept="image/*" class="field"><div class="actions"><button onclick="createPost()">Post প্রকাশ করো</button><span class="muted">সর্বোচ্চ 5MB ছবি</span></div></div>
+<div id="feed"><div class="empty">পোস্ট লোড হচ্ছে...</div></div></section>
+<section id="applyView" class="glass hidden"><h2>কোডিং শেখার আবেদন</h2><p class="muted">তোমার লক্ষ্য ও কী শিখতে চাও লিখে Admin-এর কাছে পাঠাও।</p><input id="appName" class="field" placeholder="নাম / ডাকনাম"><input id="appTopic" class="field" placeholder="কী শিখতে চাও? যেমন HTML, JavaScript"><textarea id="appDetails" class="field" placeholder="তোমার সম্পর্কে এবং কীভাবে সাহায্য চাই বিস্তারিত লিখো"></textarea><input id="appImage" class="field" type="file" accept="image/*"><button onclick="submitApplication()">আবেদন পাঠাও</button></section>
+<section id="moreView" class="glass hidden"><h2>More</h2><p>CRAZI Community-তে স্বাগতম।</p><div class="actions"><button class="secondary" onclick="openRecovery()">Recovery Key / Restore</button><button class="secondary" onclick="exportBackup()">Backup Export</button><button class="secondary" onclick="document.getElementById('backupFile').click()">Backup Import</button><input id="backupFile" type="file" accept="application/json" class="hidden" onchange="importBackup(event)"></div><p class="muted">তোমার Recovery Key বা Backup অন্য কারও সঙ্গে শেয়ার কোরো না।</p></section>
+<section id="adminView" class="glass hidden"><h2>Admin Console</h2><div id="adminLogin"><p class="muted">Admin authentication</p><input id="adminPass" class="field" type="password" placeholder="Admin password"><button onclick="adminLogin()">Login</button></div><div id="adminPanel" class="hidden"><div class="tabs"><button onclick="adminTab('posts')">Posts</button><button onclick="adminTab('apps')">Applications</button><button onclick="adminTab('notice')">Notice</button><button class="secondary" onclick="adminLogout()">Logout</button></div><div id="adminContent"></div></div></section>
+</main><aside class="side"><div class="sidecard"><h3 style="margin-top:0">Your Device</h3><div class="pill" id="deviceState">Local profile ready</div><p class="muted">তোমার Secret Recovery Key দিয়ে অন্য ফোনে নিজের প্রোফাইল পুনরুদ্ধার করতে পারবে।</p><button class="secondary" onclick="showKey()">আমার Recovery Key</button></div><div class="sidecard"><h3 style="margin-top:0">Quick Links</h3><div class="actions"><button class="secondary" onclick="go('home')">Home</button><button class="secondary" onclick="go('apply')">Apply</button><button class="secondary" onclick="go('more')">More</button></div></div><div class="sidecard"><h3 style="margin-top:0">Community Notice</h3><div id="notice" class="muted">এখনো কোনো notice নেই।</div></div></aside></div></div>
+<nav class="bottom"><button onclick="go('home')">⌂ Home</button><button onclick="go('apply')">✎ Apply</button><button onclick="go('more')">◈ More</button><button onclick="go('admin')">⚙ Admin</button></nav><div id="toast" class="toast"></div>
+<div id="modal" class="modal hidden"><div class="modalbox"><div style="display:flex;justify-content:space-between;align-items:center"><h2 id="modalTitle">Recovery</h2><button class="secondary" onclick="closeModal()">✕</button></div><div id="modalBody"></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/* SETUP: Replace these two values with your Supabase project URL and anon key. */
+const SUPABASE_URL="https://jarvddoqktnvwquqocyp.supabase.co";
+const SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImphcnZkZG9xa3RudndxdXFvY3lwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI1OTU2MTMsImV4cCI6MjEwODE3MTYxM30.HTY0uRuaXp-ljAUOCJTOE583p5-kbVwCMV5b_DekFRQ";
+const READY=SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.length>40;
+const db=READY?supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
+const $=id=>document.getElementById(id);let adminToken=sessionStorage.getItem('crazi_admin_token')||'';
+function toast(s){$('toast').textContent=s;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',3000)}
+function go(page){if(page==='post')page='home';['home','apply','more','admin'].forEach(x=>$(x+'View').classList.toggle('hidden',x!==page));history.pushState({},'',page==='home'?'#home':'#'+page);if(page==='admin'&&adminToken)adminTab('posts');window.scrollTo({top:0,behavior:'smooth'})}
+function closeModal(){$('modal').classList.add('hidden')}
+function modal(title,body){$('modalTitle').textContent=title;$('modalBody').innerHTML=body;$('modal').classList.remove('hidden')}
+function bytesToHex(b){return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+async function sha(s){return bytesToHex(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))}
+function randomKey(){const a=new Uint8Array(18);crypto.getRandomValues(a);return 'CRZ-'+btoa(String.fromCharCode(...a)).replace(/[+/=]/g,'').toUpperCase().slice(0,24)}
+let profile=JSON.parse(localStorage.getItem('crazi_profile')||'null');
+async function ensureProfile(){if(!profile){let key=randomKey();profile={id:crypto.randomUUID(),recoveryKey:key,displayName:'Community Member',createdAt:new Date().toISOString()};localStorage.setItem('crazi_profile',JSON.stringify(profile));if(db){const {error}=await db.from('profiles').insert({id:profile.id,recovery_hash:await sha(key),display_name:profile.displayName});if(error)console.warn(error)}}}
+function showKey(){modal('Your Recovery Key',`<p>এই Key অন্য ফোনে ব্যবহার করে প্রোফাইল ফিরিয়ে আনো।</p><div class="field" style="word-break:break-all">${profile.recoveryKey}</div><button onclick="copyKey()">Copy Recovery Key</button><p class="muted">Key হারালে এই ডিভাইস থেকে পুনরায় দেখা সম্ভব নাও হতে পারে। নিরাপদ স্থানে রাখো।</p>`)}
+function copyKey(){navigator.clipboard?.writeText(profile.recoveryKey);toast('Recovery Key copied')}
+function openRecovery(){modal('Recover your profile',`<p class="muted">অন্য ফোনে পাওয়া Recovery Key লিখে Restore করো। এটি একই Supabase project-এর profile ফিরিয়ে আনবে।</p><input id="recoverKey" class="field" placeholder="CRZ-..."><button onclick="recoverProfile()">Restore Profile</button>`)}
+async function recoverProfile(){if(!db)return toast('আগে Supabase সেটআপ করো');const key=$('recoverKey').value.trim();if(!key)return toast('Recovery Key লিখো');const {data,error}=await db.rpc('recover_profile',{p_recovery_hash:await sha(key)});const recovered=Array.isArray(data)?data[0]:data;if(error||!recovered?.id)return toast('Key পাওয়া যায়নি');profile={id:recovered.id,recoveryKey:key,displayName:recovered.display_name||'Community Member',createdAt:recovered.created_at};localStorage.setItem('crazi_profile',JSON.stringify(profile));closeModal();toast('Profile restored');}
+async function uploadImage(file){if(!file)return null;if(file.size>5*1024*1024)throw Error('ছবি 5MB-এর বেশি হতে পারবে না');if(!db)throw Error('Supabase সেটআপ করা হয়নি');const path=`${profile.id}/${Date.now()}-${file.name.replace(/[^a-zA-Z0-9._-]/g,'_')}`;const {error}=await db.storage.from('community-media').upload(path,file,{upsert:false});if(error)throw error;return db.storage.from('community-media').getPublicUrl(path).data.publicUrl}
+async function createPost(){try{if(!db)return toast('Supabase URL ও anon key সেট করো');let content=$('postText').value.trim();let file=$('postImage').files[0];if(!content&&!file)return toast('লেখা বা ছবি যোগ করো');let image_url=await uploadImage(file);const {error}=await db.from('posts').insert({author_id:profile.id,author_name:profile.displayName,content,image_url});if(error)throw error;$('postText').value='';$('postImage').value='';toast('Post published');loadPosts()}catch(e){toast(e.message)}}
+async function loadPosts(){if(!db){$('feed').innerHTML='<div class="empty">Supabase configure করলে live posts দেখা যাবে।</div>';return}const {data,error}=await db.from('posts').select('*,comments(*)').order('created_at',{ascending:false}).limit(50);if(error){$('feed').innerHTML='<div class="empty">পোস্ট লোড হয়নি: '+error.message+'</div>';return}$('feed').innerHTML=data.length?data.map(p=>`<article class="post"><div class="posthead"><div class="author"><div class="avatar">C</div><div><b>${esc(p.author_name||'Member')}</b><div class="muted">${new Date(p.created_at).toLocaleString()}</div></div></div><span class="pill">COMMUNITY</span></div><p>${esc(p.content||'')}</p>${p.image_url?`<img src="${esc(p.image_url)}" alt="Post image">`:''}<div class="actions"><button class="secondary" onclick="likePost('${p.id}')">♡ Like</button><span class="muted">${p.like_count||0} likes</span></div><div>${(p.comments||[]).map(c=>`<div class="comment"><b>${esc(c.author_name||'Member')}:</b> ${esc(c.body)}</div>`).join('')}</div><div class="actions"><input class="field" style="flex:1;margin:0" id="c-${p.id}" placeholder="Comment লিখো..."><button onclick="commentPost('${p.id}')">Send</button></div></article>`).join(''):'<div class="empty">এখনো কোনো পোস্ট নেই। প্রথম পোস্টটি তুমি করো!</div>'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+async function likePost(id){const {error}=await db.from('post_likes').insert({post_id:id,profile_id:profile.id});if(error&&error.code!=='23505')toast(error.message);else{await db.rpc('increment_post_like',{p_post_id:id});loadPosts()}}
+async function commentPost(id){const input=$('c-'+id),body=input.value.trim();if(!body)return;const {error}=await db.from('comments').insert({post_id:id,profile_id:profile.id,author_name:profile.displayName,body});if(error)toast(error.message);else loadPosts()}
+async function submitApplication(){try{if(!db)return toast('Supabase configure করো');let image_url=await uploadImage($('appImage').files[0]);const {error}=await db.from('applications').insert({profile_id:profile.id,applicant_name:$('appName').value.trim(),topic:$('appTopic').value.trim(),details:$('appDetails').value.trim(),image_url});if(error)throw error;toast('আবেদন Admin-এর কাছে পাঠানো হয়েছে');$('appName').value=$('appTopic').value=$('appDetails').value='';$('appImage').value=''}catch(e){toast(e.message)}}
+async function adminCall(action,extra={}){const r=await fetch(SUPABASE_URL+'/functions/v1/crazi-admin',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+SUPABASE_ANON_KEY,'x-admin-token':adminToken},body:JSON.stringify({action,...extra})});let j=await r.json();if(!r.ok)throw Error(j.error||'Admin request failed');return j}
+async function adminLogin(){try{const pass=$('adminPass').value;const r=await fetch(SUPABASE_URL+'/functions/v1/crazi-admin',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+SUPABASE_ANON_KEY},body:JSON.stringify({action:'login',password:pass})});const j=await r.json();if(!r.ok)throw Error(j.error||'Login failed');adminToken=j.token;sessionStorage.setItem('crazi_admin_token',adminToken);$('adminLogin').classList.add('hidden');$('adminPanel').classList.remove('hidden');adminTab('posts')}catch(e){toast(e.message)}}
+function adminLogout(){adminToken='';sessionStorage.removeItem('crazi_admin_token');$('adminLogin').classList.remove('hidden');$('adminPanel').classList.add('hidden')}
+async function adminTab(tab){try{if(tab==='notice'){$('adminContent').innerHTML=`<textarea id="noticeText" class="field" placeholder="Notice লিখো"></textarea><button onclick="saveNotice()">Publish Notice</button>`;return}const j=await adminCall(tab);$('adminContent').innerHTML=(j.items||[]).map(x=>`<div class="comment"><b>${esc(x.author_name||x.applicant_name||'Member')}</b><p>${esc(x.content||x.details||x.topic||'')}</p>${x.image_url?`<a target="_blank" href="${esc(x.image_url)}">ছবি দেখুন</a>`:''}<div class="actions">${tab==='apps'?`<span class="pill">${esc(x.status||'pending')}</span><button onclick="updateApp('${x.id}','approved')">Approve</button><button class="secondary" onclick="updateApp('${x.id}','rejected')">Reject</button>`:''}<button class="danger" onclick="deleteItem('${tab}','${x.id}')">Delete</button></div></div>`).join('')||'<p class="muted">কোনো item নেই।</p>'}catch(e){toast(e.message)}}
+async function updateApp(id,status){try{await adminCall('update_application',{id,status});adminTab('apps')}catch(e){toast(e.message)}}
+async function deleteItem(type,id){if(!confirm('এটি Delete করবে?'))return;try{await adminCall('delete_'+type,{id});adminTab(type)}catch(e){toast(e.message)}}
+async function saveNotice(){try{await adminCall('notice',{message:$('noticeText').value});toast('Notice published');loadNotice()}catch(e){toast(e.message)}}
+async function loadNotice(){if(!db)return;const {data}=await db.from('notices').select('message').order('created_at',{ascending:false}).limit(1).maybeSingle();if(data)$('notice').textContent=data.message}
+function exportBackup(){const blob=new Blob([JSON.stringify({profile},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='crazi-recovery-backup.json';a.click();URL.revokeObjectURL(a.href)}
+function importBackup(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const j=JSON.parse(r.result);if(!j.profile?.id||!j.profile?.recoveryKey)throw Error();profile=j.profile;localStorage.setItem('crazi_profile',JSON.stringify(profile));toast('Backup imported');}catch{toast('Invalid backup file')}};r.readAsText(f)}
+window.addEventListener('popstate',()=>{let p=(location.hash||'#home').slice(1);go(['home','apply','more','admin'].includes(p)?p:'home')});
+(async()=>{await ensureProfile();if(!READY){$('deviceState').textContent='Demo / Backend not connected';$('feed').innerHTML='<div class="empty">Supabase সেটআপ না হওয়া পর্যন্ত Community live হবে না।</div>'}else{loadPosts();loadNotice()}let p=(location.hash||'#home').slice(1);go(['home','apply','more','admin'].includes(p)?p:'home')})();
+</script></body></html>

@@ -1,132 +1,2123 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#100b20"><title>CRAZI Community</title>
-<style>
-:root{--bg:#0b0715;--panel:rgba(255,255,255,.075);--line:rgba(255,255,255,.13);--txt:#f7f1ff;--muted:#b8a9cc;--p:#a855f7;--p2:#6d28d9;--pink:#ec4899;--shadow:0 20px 60px #0008}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#482078 0,transparent 40%),radial-gradient(ellipse at 95% 35%,#24114b 0,transparent 38%),var(--bg);color:var(--txt);font-family:Inter,system-ui,"Noto Sans Bengali",sans-serif;min-height:100vh}
-button,input,textarea,select{font:inherit}button{cursor:pointer;color:white;border:1px solid var(--line);background:linear-gradient(135deg,#9333ea,#6d28d9);padding:11px 16px;border-radius:14px;box-shadow:0 8px 25px #7c3aed40;transition:.2s}button:hover{transform:translateY(-2px);filter:brightness(1.12)}button.secondary{background:#ffffff10;box-shadow:none}button.danger{background:#be123c}button:disabled{opacity:.5;cursor:not-allowed}
-header{position:sticky;top:0;z-index:5;backdrop-filter:blur(24px);background:#100b20c9;border-bottom:1px solid var(--line);padding:12px max(16px,calc((100% - 1100px)/2));display:flex;align-items:center;justify-content:space-between;gap:12px}
-.brand{font-size:21px;font-weight:900;letter-spacing:1px}.brand span{color:#c084fc}.status{font-size:11px;color:#d8b4fe}
-.wrap{max-width:1100px;margin:24px auto;padding:0 16px 100px}.hero{padding:28px;border:1px solid #ffffff20;border-radius:28px;background:linear-gradient(130deg,#8b5cf633,#ec489922),#ffffff09;backdrop-filter:blur(25px);box-shadow:var(--shadow);position:relative;overflow:hidden;animation:rise .6s ease}.hero:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:#c084fc25;filter:blur(12px);right:-50px;top:-100px}.hero h1{font-size:clamp(30px,6vw,52px);margin:5px 0}.hero p{color:var(--muted);max-width:620px;line-height:1.7}.grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;margin-top:20px}.glass,.post,.sidecard{background:var(--panel);border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(22px);box-shadow:var(--shadow)}.glass{padding:18px}.side{display:grid;gap:14px;align-content:start}.sidecard{padding:17px}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:8px 0 14px}.sectionhead h2{font-size:19px;margin:0}.muted{color:var(--muted);font-size:13px}.field{width:100%;background:#0906129c;border:1px solid var(--line);color:white;padding:13px 14px;border-radius:13px;outline:none;margin:6px 0}.field:focus{border-color:#c084fc;box-shadow:0 0 0 3px #a855f733}textarea.field{min-height:100px;resize:vertical}.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}.post{padding:17px;margin:13px 0;animation:rise .35s ease}.posthead{display:flex;justify-content:space-between;gap:10px;align-items:center}.avatar{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#c084fc,#7c3aed);font-weight:900}.author{display:flex;align-items:center;gap:10px}.post p{white-space:pre-wrap;line-height:1.65}.post img{max-width:100%;max-height:440px;object-fit:contain;border-radius:15px;margin-top:8px}.comment{padding:10px 12px;background:#ffffff0b;border-radius:12px;margin:7px 0;font-size:13px}.nav{display:flex;gap:7px;flex-wrap:wrap}.nav button{padding:9px 12px;font-size:13px}.hidden{display:none!important}.pill{display:inline-block;padding:4px 9px;border-radius:20px;background:#a855f733;color:#e9d5ff;font-size:11px}.empty{text-align:center;padding:30px;color:var(--muted)}.bottom{position:fixed;bottom:0;left:0;right:0;z-index:4;padding:10px;background:#100b20d9;backdrop-filter:blur(22px);border-top:1px solid var(--line);display:flex;justify-content:center;gap:8px}.bottom button{font-size:12px;padding:9px 12px}.toast{position:fixed;top:75px;left:50%;transform:translateX(-50%);z-index:20;background:#281544;border:1px solid #c084fc66;padding:12px 18px;border-radius:14px;display:none;box-shadow:var(--shadow)}.modal{position:fixed;inset:0;background:#05030bd9;z-index:15;display:grid;place-items:center;padding:18px}.modalbox{width:min(520px,100%);max-height:90vh;overflow:auto;background:#1b1030;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--shadow)}.modalbox h2{margin-top:0}.tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:14px}
-@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}@media(max-width:800px){.grid{grid-template-columns:1fr}.side{grid-template-columns:1fr 1fr}}@media(max-width:520px){.hero{padding:21px}.side{grid-template-columns:1fr}.wrap{margin-top:15px}.bottom{justify-content:space-around}.bottom button{padding:9px 8px}}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#251443">
+    <title>VIMAX TOPUP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-/* CRAZI V2 — premium animated liquid-glass layer */
-:root{--bg:#080512;--panel:rgba(30,18,52,.58);--line:rgba(226,190,255,.19);--txt:#fcf8ff;--muted:#c7b5dc;--p:#c084fc;--p2:#7c3aed;--pink:#f0abfc;--shadow:0 24px 80px #0009}
-body{background:radial-gradient(ellipse at 10% 10%,#6126a855,transparent 34%),radial-gradient(ellipse at 88% 20%,#a21caf35,transparent 30%),radial-gradient(ellipse at 50% 100%,#4c1d9540,transparent 45%),#080512;background-attachment:fixed;overflow-x:hidden}
-body:before,body:after{content:"";position:fixed;z-index:-1;border-radius:50%;pointer-events:none;filter:blur(70px);opacity:.42;animation:orbFloat 15s ease-in-out infinite alternate}
-body:before{width:270px;height:270px;background:#9333ea;top:12%;left:-120px}
-body:after{width:300px;height:300px;background:#c026d3;right:-140px;bottom:5%;animation-delay:-6s}
-@keyframes orbFloat{to{transform:translate3d(70px,-55px,0) scale(1.18)}}
-header{background:rgba(10,6,20,.72);border-bottom:1px solid #e9d5ff20;box-shadow:0 10px 45px #0004}
-.brand{font-size:23px;letter-spacing:2px;text-shadow:0 0 24px #c084fc88}.brand span{color:#e9d5ff}
-.hero{isolation:isolate;border:1px solid #e9d5ff38;background:linear-gradient(125deg,#a855f733,#6d28d933 45%,#ec489922),rgba(255,255,255,.055);box-shadow:0 30px 90px #0008,inset 0 1px #fff2;transform-style:preserve-3d}
-.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(110deg,transparent 20%,#ffffff12 42%,transparent 62%);transform:translateX(-100%);animation:glassShine 8s ease-in-out infinite}
-.hero:after{width:280px;height:280px;background:radial-gradient(circle,#e9d5ff40,transparent 68%);filter:blur(5px);animation:orbFloat 9s ease-in-out infinite alternate}
-@keyframes glassShine{0%,55%{transform:translateX(-120%)}85%,100%{transform:translateX(120%)}}
-.hero h1{letter-spacing:-1.5px;text-shadow:0 8px 35px #0006}
-.glass,.post,.sidecard,.modalbox{background:linear-gradient(145deg,rgba(255,255,255,.105),rgba(255,255,255,.035));border:1px solid rgba(233,213,255,.19);box-shadow:0 20px 65px #0007,inset 0 1px #ffffff12;backdrop-filter:blur(28px) saturate(145%)}
-.glass,.post,.sidecard{transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease}
-.post:hover,.sidecard:hover{transform:translateY(-3px);border-color:#c084fc66;box-shadow:0 25px 70px #0008,0 0 30px #9333ea18}
-button{background:linear-gradient(135deg,#c084fc,#7c3aed 65%,#6d28d9);border:1px solid #e9d5ff50;box-shadow:0 9px 28px #7c3aed55,inset 0 1px #ffffff55;font-weight:700;letter-spacing:.1px}
-button:hover{box-shadow:0 13px 36px #9333ea88,inset 0 1px #ffffff70;transform:translateY(-3px) scale(1.015)}
-button:active{transform:translateY(0) scale(.97)}
-button.secondary{background:linear-gradient(145deg,#ffffff17,#ffffff08);border-color:#ffffff25;box-shadow:inset 0 1px #ffffff12}
-.field{background:rgba(8,4,18,.62);border:1px solid #e9d5ff25;box-shadow:inset 0 2px 12px #0004;transition:.2s}
-.field:focus{border-color:#d8b4fe;box-shadow:0 0 0 4px #a855f72b,0 0 25px #a855f722}
-.pill{background:linear-gradient(120deg,#a855f744,#ec489933);border:1px solid #e9d5ff35;color:#f3e8ff;box-shadow:0 0 20px #a855f71a}
-.avatar{box-shadow:0 7px 22px #9333ea66,inset 0 1px #fff8}
-.post{border-radius:25px;padding:19px}
-.post img{border:1px solid #ffffff20;box-shadow:0 15px 40px #0006}
-.bottom{background:rgba(10,6,20,.82);backdrop-filter:blur(28px) saturate(150%);border-top:1px solid #e9d5ff25;box-shadow:0 -10px 40px #0005}
-.bottom button{border-radius:13px}
-.modal{backdrop-filter:blur(12px)}.modalbox{background:linear-gradient(145deg,#28143f,#130b23);animation:modalIn .25s ease}
-@keyframes modalIn{from{opacity:0;transform:translateY(18px) scale(.97)}to{opacity:1;transform:none}}
-.toast{background:linear-gradient(135deg,#32164d,#1b1030);border:1px solid #d8b4fe66;box-shadow:0 15px 50px #0008}
-.empty{border:1px dashed #d8b4fe30;border-radius:18px;background:#ffffff05;margin:12px 0}
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <!-- Firebase Realtime Database SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
 
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f8fafc; }
+        .nav-gradient { background: white; color: #1e293b; }
+        .active-tab { color: #03a9f4 !important; }
+        .hidden { display: none !important; }
+        
+        .notice-scroll { animation: scroll-left 15s linear infinite; display: inline-block; white-space: nowrap; }
+        @keyframes scroll-left { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+        
+        .method-card { transition: all 0.2s; border: 2px solid transparent; }
+        .method-card:active { transform: scale(0.95); }
+        
+        @keyframes fadeInUp { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+        .animate-fade-in { animation: fadeInUp 0.4s ease-out forwards; }
 
-/* CRAZI V3 — motion-rich purple glass polish */
-html{scroll-behavior:smooth}
-::selection{background:#c084fc66;color:#fff}
-.hero{animation:heroEnter .8s cubic-bezier(.2,.8,.2,1) both}
-@keyframes heroEnter{0%{opacity:0;transform:perspective(900px) rotateX(7deg) translateY(24px) scale(.98);filter:blur(5px)}100%{opacity:1;transform:none;filter:none}}
-.hero h1{background:linear-gradient(100deg,#fff 8%,#e9d5ff 42%,#c084fc 72%,#fff);background-size:220% auto;color:transparent;background-clip:text;-webkit-background-clip:text;animation:titleFlow 7s linear infinite}
-@keyframes titleFlow{to{background-position:220% center}}
-.glass,.post,.sidecard{position:relative;overflow:hidden}
-.glass:before,.post:before,.sidecard:before{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(125deg,#fff0 15%,#fff1 35%,#fff0 55%);transform:translateX(-130%);transition:transform .8s ease}
-.glass:hover:before,.post:hover:before,.sidecard:hover:before{transform:translateX(130%)}
-.post{animation:cardEnter .48s cubic-bezier(.2,.75,.25,1) both}
-.post:nth-child(2){animation-delay:.06s}.post:nth-child(3){animation-delay:.12s}.post:nth-child(4){animation-delay:.18s}
-@keyframes cardEnter{from{opacity:0;transform:translateY(17px) scale(.985)}to{opacity:1;transform:translateY(0) scale(1)}}
-.sectionhead h2{letter-spacing:-.4px}
-.field,button,.post,.sidecard{will-change:transform}
-button:focus-visible,.field:focus-visible{outline:2px solid #e9d5ff;outline-offset:3px}
-.avatar{position:relative;isolation:isolate}
-.avatar:after{content:"";position:absolute;inset:-3px;border-radius:15px;border:1px solid #e9d5ff70;animation:avatarPulse 3s ease-in-out infinite;z-index:-1}
-@keyframes avatarPulse{50%{transform:scale(1.12);opacity:.25}}
-.pill{letter-spacing:.45px}
-.bottom button{min-width:66px}
-#feed .empty{padding:38px 20px}
-#deviceState{box-shadow:0 0 22px #a855f733}
-@media(max-width:520px){.hero h1{font-size:36px}.hero p{font-size:14px}.post{padding:15px}.glass{padding:15px}}
+        .product-card {
+            border: 1px solid #e2e8f0;
+            background: white;
+            padding: 12px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .product-card:hover { border-color: #81d4fa; }
+        .product-card.selected {
+            border: 1.5px solid #03a9f4;
+            background-color: #e1f5fe; 
+        }
+        .product-bullet {
+            height: 8px; width: 8px; background-color: #cbd5e1; border-radius: 50%; margin-right: 8px; flex-shrink: 0;
+        }
+        .product-card.selected .product-bullet { background-color: #03a9f4; }
+        
+        .pay-method-card {
+            border: 2px solid #e2e8f0;
+            background: white;
+            padding: 12px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        .pay-method-card.selected {
+            border-color: #03a9f4;
+            background-color: #f0f9ff;
+        }
+        .pay-method-card .check-icon {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            color: #03a9f4;
+            display: none;
+        }
+        .pay-method-card.selected .check-icon {
+            display: block;
+        }
+        
+        #fab-container.is-open #fab-toggler {
+            background-color: #dc2626;
+        }
+        #fab-container.is-open #fab-icon-open {
+            transform: rotate(-180deg) scale(0);
+            opacity: 0;
+        }
+        #fab-container.is-open #fab-icon-close {
+            transform: scale(1) rotate(0);
+            opacity: 1;
+        }
+        #fab-container.is-open #fab-options {
+            transform: translateY(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
 
-</style>
+        :root{--vx:#8b5cf6;--vx2:#6d28d9;--ink:#17112b;--glass:rgba(255,255,255,.72)}
+        body{font-family:'Poppins',sans-serif;background:radial-gradient(circle at 12% 8%,#e9ddff 0,transparent 28%),radial-gradient(circle at 90% 24%,#d9d4ff 0,transparent 30%),#f7f5ff;color:var(--ink)}
+        #app-content{background:linear-gradient(160deg,#fbfaff,#f1edff 55%,#f8f7ff);overflow:hidden}
+        .vx-glass{background:rgba(255,255,255,.68);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid rgba(255,255,255,.82);box-shadow:0 14px 40px rgba(73,45,130,.10)}
+        .vx-3d{transform:perspective(900px) rotateX(1deg);box-shadow:0 18px 35px rgba(86,55,160,.15),inset 0 1px 0 rgba(255,255,255,.9)}
+        #auth-sec{background:radial-gradient(circle at 15% 18%,#c4b5fd 0,transparent 28%),radial-gradient(circle at 85% 78%,#a78bfa 0,transparent 27%),linear-gradient(135deg,#17102e,#352064 55%,#20143e);overflow:hidden}
+        #auth-sec:before,#auth-sec:after{content:'';position:absolute;width:190px;height:190px;border-radius:42px;background:linear-gradient(135deg,rgba(196,181,253,.32),rgba(139,92,246,.08));border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);transform:rotate(28deg);animation:vxFloat 8s ease-in-out infinite;pointer-events:none}
+        #auth-sec:before{top:5%;left:-75px}#auth-sec:after{right:-80px;bottom:8%;width:230px;height:230px;animation-delay:-3s}
+        @keyframes vxFloat{0%,100%{translate:0 0;rotate:0deg}50%{translate:0 -20px;rotate:9deg}}
+        .vx-auth-card{position:relative;z-index:1;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.8);border-radius:28px;padding:24px;box-shadow:0 28px 80px rgba(8,4,30,.38);backdrop-filter:blur(24px);animation:vxCardIn .65s cubic-bezier(.2,.8,.2,1)}
+        @keyframes vxCardIn{from{opacity:0;transform:translateY(24px) rotateX(8deg) scale(.96)}to{opacity:1;transform:none}}
+        .vx-field{width:100%;background:#f7f5ff;border:1px solid #e5defb;border-radius:14px;padding:13px 14px;margin-bottom:11px;outline:none;transition:.2s}
+        .vx-field:focus{border-color:var(--vx);box-shadow:0 0 0 4px rgba(139,92,246,.12);background:#fff}
+        .vx-primary{background:linear-gradient(135deg,#9b75ff,#6d3bd1);box-shadow:0 9px 22px rgba(109,59,209,.27);color:#fff;border-radius:14px;font-weight:700;transition:.2s}
+        .vx-primary:active{transform:scale(.97)}
+        .vx-social{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:12px;border:1px solid #e8e3f5;background:#fff;border-radius:13px;font-size:13px;font-weight:600;color:#33294b;margin-top:9px;transition:.2s}
+        .vx-social:active{transform:scale(.98);background:#f7f3ff}
+        .vx-notice{margin:12px 12px 16px;padding:14px 15px;border-radius:19px;background:linear-gradient(120deg,#251443,#50308c 58%,#7754bd);color:#fff;box-shadow:0 13px 28px rgba(73,43,130,.22);border:1px solid rgba(255,255,255,.2);position:relative;overflow:hidden}
+        .vx-notice:after{content:'';position:absolute;width:130px;height:130px;right:-45px;top:-55px;border-radius:35px;transform:rotate(35deg);background:rgba(255,255,255,.08)}
+        .vx-bottom-nav{position:fixed;z-index:60;bottom:calc(10px + env(safe-area-inset-bottom));left:12px;right:12px;max-width:440px;margin:auto;padding:9px 8px;border-radius:25px;background:rgba(31,22,55,.84);border:1px solid rgba(255,255,255,.24);box-shadow:0 18px 45px rgba(36,20,70,.28);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px)}
+        .vx-bottom-nav .nav-item{flex:1;min-width:0;color:#c8bddf;border-radius:17px;padding:8px 2px 7px;transition:all .25s;position:relative}
+        .vx-bottom-nav .nav-item i{font-size:18px;transition:transform .25s}
+        .vx-bottom-nav .nav-item span{font-size:9px;letter-spacing:.2px;margin-top:4px}
+        .vx-bottom-nav .nav-item.active-tab{color:#fff!important;background:linear-gradient(135deg,rgba(167,139,250,.45),rgba(124,58,237,.34));box-shadow:inset 0 1px 0 rgba(255,255,255,.22),0 5px 16px rgba(0,0,0,.12)}
+        .vx-bottom-nav .nav-item.active-tab i{transform:translateY(-2px) scale(1.08);color:#d8c8ff}
+        .vx-bottom-nav .nav-item.active-tab:after{content:'';position:absolute;bottom:3px;left:42%;width:16%;height:2px;border-radius:9px;background:#c4b5fd}
+        main{padding-bottom:115px!important}
+        .vx-skeleton{background:linear-gradient(90deg,#eee9fa 25%,#faf8ff 45%,#eee9fa 65%);background-size:220% 100%;animation:vxShimmer 1.35s infinite;border-radius:12px}
+        @keyframes vxShimmer{to{background-position:-220% 0}}
+        .product-card.selected{border-color:#8b5cf6;background:#f5f0ff;box-shadow:0 8px 20px rgba(139,92,246,.12)}
+        .active-tab{color:#fff!important}
+
+        /* VIMAX AUTH 3D GLASS REDESIGN */
+        #auth-sec{isolation:isolate;min-height:100svh;overflow-y:auto;padding-top:max(20px,env(safe-area-inset-top));padding-bottom:max(20px,env(safe-area-inset-bottom));background:#100b20;background-image:radial-gradient(ellipse at 15% 15%,rgba(139,92,246,.45),transparent 38%),radial-gradient(ellipse at 85% 80%,rgba(91,33,182,.38),transparent 38%),linear-gradient(145deg,#100b20,#21113d 55%,#100b20)}
+        #auth-sec:before,#auth-sec:after{z-index:-1;filter:blur(1px);border-radius:42px}
+        .vx-auth-scene{position:absolute;inset:0;overflow:hidden;pointer-events:none;perspective:900px}
+        .vx-orb{position:absolute;border-radius:50%;filter:blur(1px);transform-style:preserve-3d;animation:vxOrbFloat 9s ease-in-out infinite}
+        .vx-orb.one{width:190px;height:190px;top:8%;right:-55px;background:radial-gradient(circle at 30% 28%,#f0e9ff,#a78bfa 34%,#6d28d9 68%,rgba(109,40,217,.08));box-shadow:inset -18px -22px 38px #32116f88,0 25px 65px #8b5cf655}
+        .vx-orb.two{width:110px;height:110px;bottom:12%;left:-25px;background:radial-gradient(circle at 32% 28%,#fff,#c4b5fd 32%,#7c3aed 75%);animation-delay:-3s;box-shadow:inset -12px -15px 25px #32116f77,0 18px 50px #8b5cf644}
+        .vx-orb.three{width:42px;height:42px;top:42%;left:8%;background:radial-gradient(circle at 30% 25%,#fff,#a78bfa 42%,#6d28d9);animation-delay:-5s}
+        @keyframes vxOrbFloat{0%,100%{transform:translate3d(0,0,0) rotateX(0) rotateY(0)}50%{transform:translate3d(-12px,-24px,35px) rotateX(18deg) rotateY(22deg)}}
+        .vx-auth-wrap{position:relative;z-index:2;width:100%;max-width:410px;margin:auto;transform-style:preserve-3d;animation:vxAuthEnter .8s cubic-bezier(.2,.8,.2,1) both}
+        @keyframes vxAuthEnter{from{opacity:0;transform:translateY(35px) rotateX(10deg) scale(.94)}to{opacity:1;transform:translateY(0) rotateX(0) scale(1)}}
+        .vx-auth-card{background:linear-gradient(145deg,rgba(255,255,255,.17),rgba(255,255,255,.075));border:1px solid rgba(255,255,255,.24);border-radius:30px;padding:23px;box-shadow:0 30px 90px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.22);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);color:#fff}
+        .vx-auth-card h1{color:#fff!important}.vx-auth-card .text-gray-500,.vx-auth-card .text-gray-400{color:#c9bfdf!important}
+        .vx-auth-brandmark{width:66px;height:66px;border-radius:22px;margin:auto;display:grid;place-items:center;color:#fff;font-size:28px;background:linear-gradient(145deg,#c4b5fd,#7c3aed 55%,#4c1d95);box-shadow:0 15px 32px #7c3aed66,inset 0 2px 2px #ffffff88;transform:rotate(-8deg);animation:vxBrandFloat 4s ease-in-out infinite}
+        @keyframes vxBrandFloat{50%{transform:translateY(-7px) rotate(5deg)}}
+        .vx-auth-tabs{background:rgba(15,8,31,.42)!important;border:1px solid rgba(255,255,255,.12)}
+        .vx-auth-tabs button{color:#d8cafa!important}.vx-auth-tabs button.bg-white{background:linear-gradient(135deg,#a78bfa,#7c3aed)!important;color:#fff!important;box-shadow:0 6px 18px #7c3aed55!important}
+        .vx-auth-card .vx-field{background:rgba(15,8,31,.42);border:1px solid rgba(221,214,254,.22);color:#fff;border-radius:15px;padding:14px 15px}
+        .vx-auth-card .vx-field::placeholder{color:#b7aaca}.vx-auth-card .vx-field:focus{background:rgba(15,8,31,.62);border-color:#a78bfa;box-shadow:0 0 0 4px #a78bfa22}
+        .vx-auth-card .vx-primary{background:linear-gradient(110deg,#a78bfa,#7c3aed 55%,#6d28d9);border:1px solid #ffffff33;box-shadow:0 12px 26px #7c3aed55;color:#fff;letter-spacing:.5px}
+        .vx-auth-card .vx-social{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:14px;backdrop-filter:blur(12px)}
+        .vx-auth-card .vx-social:hover{background:rgba(255,255,255,.17);transform:translateY(-1px)}
+        .vx-auth-divider{color:#c4b5fd!important}.vx-auth-card #verify-panel{background:rgba(167,139,250,.14)!important;border-color:rgba(196,181,253,.4)!important;color:#fff}
+        .vx-auth-card #verify-panel p{color:#f2edff!important}.vx-auth-card #verify-panel button{color:#ddd0ff}
+        .vx-auth-card .vx-auth-foot{color:#b9acd4}
+        .vx-auth-card button:disabled{opacity:.58;filter:grayscale(.25);cursor:wait}
+        @media(prefers-reduced-motion:reduce){.vx-orb,.vx-auth-wrap,.vx-auth-brandmark{animation:none!important;transition:none!important}}
+
+        @media(min-width:600px){#app-content{border-radius:28px;margin:16px auto;min-height:calc(100vh - 32px)}.vx-bottom-nav{bottom:18px}}
+
+    </style>
 </head>
-<body>
-<header><div><div class="brand">CRAZI<span>.</span></div><div class="status">COMMUNITY • CREATE • LEARN</div></div><div class="nav"><button class="secondary" onclick="openRecovery()">Recovery</button><button onclick="go('admin')">Admin</button></div></header>
-<div class="wrap">
-<section class="hero"><span class="pill">WELCOME TO CRAZI COMMUNITY</span><h1>Build. Share. <span style="color:#d8b4fe">Grow.</span></h1><p>তোমার আইডিয়া, প্রশ্ন, coding journey এবং creative কাজ কমিউনিটির সঙ্গে শেয়ার করো। অ্যাকাউন্ট ছাড়াই শুরু করো—Recovery Key নিরাপদে সংরক্ষণ করো।</p><div class="actions"><button onclick="document.getElementById('composer').scrollIntoView({behavior:'smooth'})">＋ নতুন পোস্ট</button><button class="secondary" onclick="go('apply')">কোডিং শেখার আবেদন</button></div></section>
-<div class="grid"><main>
-<section id="homeView"><div class="sectionhead"><h2>Community Feed</h2><button class="secondary" onclick="loadPosts()">↻ Refresh</button></div>
-<div class="glass" id="composer"><h3 style="margin-top:0">তুমি কী শেয়ার করতে চাও?</h3><textarea id="postText" class="field" placeholder="তোমার আইডিয়া বা প্রশ্ন লিখো..."></textarea><input id="postImage" type="file" accept="image/*" class="field"><div class="actions"><button onclick="createPost()">Post প্রকাশ করো</button><span class="muted">সর্বোচ্চ 5MB ছবি</span></div></div>
-<div id="feed"><div class="empty">পোস্ট লোড হচ্ছে...</div></div></section>
-<section id="applyView" class="glass hidden"><h2>কোডিং শেখার আবেদন</h2><p class="muted">তোমার লক্ষ্য ও কী শিখতে চাও লিখে Admin-এর কাছে পাঠাও।</p><input id="appName" class="field" placeholder="নাম / ডাকনাম"><input id="appTopic" class="field" placeholder="কী শিখতে চাও? যেমন HTML, JavaScript"><textarea id="appDetails" class="field" placeholder="তোমার সম্পর্কে এবং কীভাবে সাহায্য চাই বিস্তারিত লিখো"></textarea><input id="appImage" class="field" type="file" accept="image/*"><button onclick="submitApplication()">আবেদন পাঠাও</button></section>
-<section id="moreView" class="glass hidden"><h2>More</h2><p>CRAZI Community-তে স্বাগতম।</p><div class="actions"><button class="secondary" onclick="openRecovery()">Recovery Key / Restore</button><button class="secondary" onclick="exportBackup()">Backup Export</button><button class="secondary" onclick="document.getElementById('backupFile').click()">Backup Import</button><input id="backupFile" type="file" accept="application/json" class="hidden" onchange="importBackup(event)"></div><p class="muted">তোমার Recovery Key বা Backup অন্য কারও সঙ্গে শেয়ার কোরো না।</p></section>
-<section id="adminView" class="glass hidden"><h2>Admin Console</h2><div id="adminLogin"><p class="muted">Admin authentication</p><input id="adminPass" class="field" type="password" placeholder="Admin password"><button onclick="adminLogin()">Login</button></div><div id="adminPanel" class="hidden"><div class="tabs"><button onclick="adminTab('posts')">Posts</button><button onclick="adminTab('apps')">Applications</button><button onclick="adminTab('notice')">Notice</button><button class="secondary" onclick="adminLogout()">Logout</button></div><div id="adminContent"></div></div></section>
-</main><aside class="side"><div class="sidecard"><h3 style="margin-top:0">Your Device</h3><div class="pill" id="deviceState">Local profile ready</div><p class="muted">তোমার Secret Recovery Key দিয়ে অন্য ফোনে নিজের প্রোফাইল পুনরুদ্ধার করতে পারবে।</p><button class="secondary" onclick="showKey()">আমার Recovery Key</button></div><div class="sidecard"><h3 style="margin-top:0">Quick Links</h3><div class="actions"><button class="secondary" onclick="go('home')">Home</button><button class="secondary" onclick="go('apply')">Apply</button><button class="secondary" onclick="go('more')">More</button></div></div><div class="sidecard"><h3 style="margin-top:0">Community Notice</h3><div id="notice" class="muted">এখনো কোনো notice নেই।</div></div></aside></div></div>
-<nav class="bottom"><button onclick="go('home')">⌂ Home</button><button onclick="go('apply')">✎ Apply</button><button onclick="go('more')">◈ More</button><button onclick="go('admin')">⚙ Admin</button></nav><div id="toast" class="toast"></div>
-<div id="modal" class="modal hidden"><div class="modalbox"><div style="display:flex;justify-content:space-between;align-items:center"><h2 id="modalTitle">Recovery</h2><button class="secondary" onclick="closeModal()">✕</button></div><div id="modalBody"></div></div></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<body class="select-none bg-slate-50">
+
+<!-- VIMAX TOPUP AUTH -->
+<section id="auth-sec" class="min-h-screen flex flex-col items-center justify-center p-5 fixed inset-0 z-50">
+  <div class="vx-auth-scene" aria-hidden="true"><div class="vx-orb one"></div><div class="vx-orb two"></div><div class="vx-orb three"></div></div>
+  <div class="vx-auth-wrap">
+    <div class="vx-auth-card">
+      <div class="text-center mb-6">
+        <div class="vx-auth-brandmark mb-4"><i class="fas fa-gamepad"></i></div>
+        <h1 class="text-2xl font-extrabold tracking-tight">VIMAX <span style="color:#c4b5fd">TOPUP</span></h1>
+        <p class="text-xs mt-2" style="color:#c9bfdf">LEVEL UP YOUR GAME • INSTANT TOPUP</p>
+        <div class="flex justify-center gap-1 mt-3"><span class="w-7 h-1 rounded-full" style="background:#c4b5fd"></span><span class="w-2 h-1 rounded-full bg-white/30"></span><span class="w-2 h-1 rounded-full bg-white/30"></span></div>
+      </div>
+      <div class="grid grid-cols-2 gap-2 p-1 rounded-xl mb-5 vx-auth-tabs">
+        <button onclick="toggleAuth('login')" id="btn-login-view" class="py-2.5 rounded-lg font-bold text-sm bg-white shadow">Sign In</button>
+        <button onclick="toggleAuth('register')" id="btn-reg-view" class="py-2.5 rounded-lg font-bold text-sm">Create Account</button>
+      </div>
+      <div id="login-form">
+        <label class="block text-xs font-semibold mb-1.5" style="color:#e9ddff">EMAIL ADDRESS</label>
+        <input type="email" id="login-email" placeholder="you@example.com" autocomplete="email" class="vx-field" />
+        <label class="block text-xs font-semibold mb-1.5" style="color:#e9ddff">PASSWORD</label>
+        <input type="password" id="login-pass" placeholder="Enter your password" autocomplete="current-password" class="vx-field" />
+        <button id="login-submit" onclick="handleLogin()" class="vx-primary w-full py-3.5">SIGN IN <i class="fas fa-arrow-right ml-1"></i></button>
+        <button onclick="resetPassword()" class="w-full text-xs font-semibold mt-3" style="color:#d8cafa">Forgot password?</button>
+      </div>
+      <div id="register-form" class="hidden">
+        <label class="block text-xs font-semibold mb-1.5" style="color:#e9ddff">FULL NAME</label>
+        <input type="text" id="reg-name" placeholder="Your name" autocomplete="name" class="vx-field" />
+        <label class="block text-xs font-semibold mb-1.5" style="color:#e9ddff">EMAIL ADDRESS</label>
+        <input type="email" id="reg-email" placeholder="you@example.com" autocomplete="email" class="vx-field" />
+        <label class="block text-xs font-semibold mb-1.5" style="color:#e9ddff">PHONE (OPTIONAL)</label>
+        <input type="tel" id="reg-phone" placeholder="01XXXXXXXXX" autocomplete="tel" class="vx-field" />
+        <label class="block text-xs font-semibold mb-1.5" style="color:#e9ddff">PASSWORD</label>
+        <input type="password" id="reg-pass" placeholder="At least 6 characters" autocomplete="new-password" class="vx-field" />
+        <button id="register-submit" onclick="handleRegister()" class="vx-primary w-full py-3.5">CREATE ACCOUNT <i class="fas fa-sparkles ml-1"></i></button>
+        <p class="text-[10px] mt-3 text-center" style="color:#c9bfdf">Email verification is required once before first access.</p>
+      </div>
+      <div class="flex items-center gap-3 my-4"><div class="h-px bg-white/20 flex-1"></div><span class="text-[10px] vx-auth-divider">OR CONTINUE WITH</span><div class="h-px bg-white/20 flex-1"></div></div>
+      <button id="google-login" onclick="signInWithGoogle()" class="vx-social"><i class="fab fa-google text-red-400 text-base"></i> Continue with Google</button>
+      <button id="github-login" onclick="signInWithGithub()" class="vx-social"><i class="fab fa-github text-xl"></i> Continue with GitHub</button>
+      <div id="verify-panel" class="hidden mt-4 rounded-2xl p-4 text-center">
+        <div class="mx-auto w-12 h-12 rounded-2xl grid place-items-center mb-2" style="background:#a78bfa33"><i class="fas fa-envelope-circle-check text-2xl" style="color:#ddd0ff"></i></div>
+        <p class="font-bold text-sm mt-1">Verify your email</p>
+        <p id="verify-email-text" class="text-xs mt-2 leading-relaxed">Open the verification link sent to your inbox, then return here.</p>
+        <button id="resend-verify-btn" onclick="resendVerification()" class="text-xs font-bold mt-3 underline">Resend verification email</button>
+        <button id="check-verify-btn" onclick="checkVerification()" class="vx-primary w-full py-3 mt-3 text-xs">I VERIFIED — CHECK STATUS</button>
+        <button onclick="cancelUnverifiedLogin()" class="text-xs mt-3">Use another account / Sign out</button>
+      </div>
+      <p class="vx-auth-foot text-[10px] text-center mt-5"><i class="fas fa-shield-halved mr-1"></i> Secure authentication powered by Firebase</p>
+    </div>
+  </div>
+</section>
+
+<!-- APP CONTENT -->
+<div id="app-content" class="hidden relative max-w-md mx-auto bg-slate-50 min-h-screen shadow-2xl">
+    <!-- Header -->
+    <header class="bg-white p-4 sticky top-0 z-40 flex justify-between items-center shadow-sm">
+        <div class="flex items-center gap-2">
+            <img id="header-logo-img" src="https://placehold.co/150x50/6d28d9/ffffff?text=VIMAX+TOPUP" class="h-8 object-contain">
+        </div>
+        <div class="bg-sky-500 px-4 py-2 rounded-full text-sm font-bold text-white border border-sky-600 shadow-md">
+            <i class="fas fa-wallet mr-1"></i> ৳ <span id="header-balance">0</span>
+        </div>
+    </header>
+
+    <!-- Premium Notice Card -->
+    <div class="vx-notice" role="status">
+      <div class="flex items-center justify-between gap-3 relative z-10">
+        <div class="flex items-center gap-2"><span class="w-9 h-9 rounded-xl flex items-center justify-center" style="background:#ffffff22"><i class="fas fa-bullhorn"></i></span><div><p class="text-[10px] uppercase tracking-[2px] text-purple-200 font-bold">Vimax Updates</p><p class="font-bold text-sm">Latest Announcement</p></div></div>
+        <span class="text-[9px] px-2 py-1 rounded-full font-bold" style="background:#c4b5fd;color:#28134d">NOTICE</span>
+      </div>
+      <p id="notice-text" class="relative z-10 text-xs leading-relaxed mt-3 text-purple-50">VIMAX TOPUP-এ স্বাগতম! নতুন অফার ও আপডেট এখানে দেখুন।</p>
+    </div>
+
+    <!-- Main Container -->
+    <main class="p-3 relative pb-24">
+        
+        <!-- HOME SECTION -->
+        <section id="home-sec" class="animate-fade-in">
+            <div id="banner-container" class="mb-6 rounded-xl overflow-hidden shadow-md h-44 bg-gray-200 relative group">
+                <div id="slider-wrapper" class="flex h-full w-full transition-transform duration-500 ease-out">
+                    <img src="https://placehold.co/600x300/29b6f6/FFF?text=Loading..." class="w-full h-full object-cover flex-shrink-0">
+                </div>
+                <div id="slider-dots" class="absolute bottom-3 left-0 right-0 flex justify-center gap-2 z-10"></div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 mb-5 px-2">
+                <a id="home-whatsapp" href="#" class="bg-white py-2 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center justify-center gap-1.5 active:scale-95 transition h-24 no-underline">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center bg-green-50">
+                        <i class="fab fa-whatsapp text-3xl text-[#25D366]"></i>
+                    </div>
+                    <span class="text-[11px] font-bold text-gray-700">WhatsApp</span>
+                </a>
+
+                <a id="home-telegram" href="#" class="bg-white py-2 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center justify-center gap-1.5 active:scale-95 transition h-24 no-underline">
+                    <div class="w-10 h-10 rounded-full flex items-center justify-center bg-blue-50">
+                        <i class="fab fa-telegram-plane text-3xl text-[#0088cc]"></i>
+                    </div>
+                    <span class="text-[11px] font-bold text-gray-700">Telegram</span>
+                </a>
+
+                <a id="home-app-dl" href="#" target="_blank" class="bg-white py-2 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 flex flex-col items-center justify-center gap-1.5 active:scale-95 transition h-24 no-underline">
+                    <div class="w-10 h-10 rounded-full overflow-hidden shadow-sm">
+                        <img src="https://i.ibb.co/WvrTGr5Y/google-play-store-logo-1273375-804.jpg" class="w-full h-full object-cover" alt="App DL">
+                    </div>
+                    <span class="text-[11px] font-bold text-gray-700 text-center leading-tight">App<br>Download</span>
+                </a>
+            </div>
+            
+            <div id="services-list" class="space-y-6 mb-8">
+                <div class="grid grid-cols-3 gap-3"><div class="vx-skeleton aspect-square"></div><div class="vx-skeleton aspect-square"></div><div class="vx-skeleton aspect-square"></div><div class="vx-skeleton aspect-square"></div><div class="vx-skeleton aspect-square"></div><div class="vx-skeleton aspect-square"></div></div>
+            </div>
+
+            <div class="mt-8 mb-6">
+                <h3 class="text-center font-bold text-slate-700 text-xl mb-5 font-serif">Latest 5 Orders</h3>
+                <div id="latest-orders-list" class="space-y-3 px-1">
+                    <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between animate-pulse">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-gray-200 rounded-full"></div>
+                            <div>
+                                <div class="h-4 bg-gray-200 rounded w-24 mb-2"></div>
+                                <div class="h-3 bg-gray-200 rounded w-32"></div>
+                            </div>
+                        </div>
+                        <div class="h-6 bg-gray-200 rounded-full w-20"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="promo-banner-container" class="mt-8 mb-6 px-1 hidden">
+                <a id="promo-banner-link" href="#" target="_blank">
+                    <img id="promo-banner-img" src="" class="w-full rounded-xl shadow-md object-cover">
+                </a>
+            </div>
+            
+            <div class="mt-8 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
+                <div class="text-center mb-5">
+                    <img id="about-logo-img" src="https://placehold.co/150x50/6d28d9/ffffff?text=VIMAX+TOPUP" class="h-10 mx-auto object-contain mb-2">
+                    <h2 id="about-site-name" class="text-lg font-bold text-gray-800">App Name</h2>
+                    <p class="text-sm text-gray-500 mt-1">Free Fire Diamond TopUp<br>Premium Game TopUp Store</p>
+                </div>
+
+                <p class="text-xs text-center text-gray-600 mb-5 px-2 leading-relaxed">
+                    <b>নোটিশ:</b> যেকোন অর্ডার জনিত সমস্যায় মেসেজারে অর্ডারের স্ক্রিনশট এবং পেমেন্টের ট্রানজেকশন আইডি লিখে মেসেজ দিন। ১৮ বছরের নিচে অভিভাবকের অনুমতি ছাড়া অর্ডার করা সম্পূর্ণভাবে নিষিদ্ধ।
+                </p>
+
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                    <a id="about-facebook" href="#" target="_blank" class="flex items-center justify-center gap-2 bg-gray-50 p-3 rounded-lg border border-gray-200 hover:bg-gray-100 transition no-underline">
+                        <i class="fab fa-facebook-f text-lg text-[#1877F2]"></i> <span class="font-semibold text-sm text-gray-700">Facebook</span>
+                    </a>
+                    <a id="about-youtube" href="#" target="_blank" class="flex items-center justify-center gap-2 bg-gray-50 p-3 rounded-lg border border-gray-200 hover:bg-gray-100 transition no-underline">
+                        <i class="fab fa-youtube text-lg text-[#FF0000]"></i> <span class="font-semibold text-sm text-gray-700">YouTube</span>
+                    </a>
+                    <a id="about-telegram" href="#" target="_blank" class="flex items-center justify-center gap-2 bg-gray-50 p-3 rounded-lg border border-gray-200 hover:bg-gray-100 transition no-underline">
+                        <i class="fab fa-telegram-plane text-lg text-[#0088cc]"></i> <span class="font-semibold text-sm text-gray-700">Telegram</span>
+                    </a>
+                    <a id="about-whatsapp" href="#" target="_blank" class="flex items-center justify-center gap-2 bg-gray-50 p-3 rounded-lg border border-gray-200 hover:bg-gray-100 transition no-underline">
+                        <i class="fab fa-whatsapp text-lg text-[#25D366]"></i> <span class="font-semibold text-sm text-gray-700">WhatsApp</span>
+                    </a>
+                </div>
+                
+                <h3 class="font-bold text-gray-800 text-base text-center mb-4">Contact Us</h3>
+                <div class="space-y-3">
+                    <a id="contact-whatsapp" href="#" class="block bg-gray-50 p-3 rounded-lg border border-gray-200 hover:bg-gray-100 transition no-underline">
+                         <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-whatsapp text-green-500"></i>
+                                <span class="font-semibold text-sm text-gray-700">Whatsapp HelpLine</span>
+                            </div>
+                            <span class="text-xs text-gray-500">সকাল ৮টা থেকে রাত ১২টা</span>
+                        </div>
+                    </a>
+                    <a id="contact-telegram" href="#" class="block bg-gray-50 p-3 rounded-lg border border-gray-200 hover:bg-gray-100 transition no-underline">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-telegram-plane text-sky-500"></i>
+                                <span class="font-semibold text-sm text-gray-700">Telegram HelpLine</span>
+                            </div>
+                            <span class="text-xs text-gray-500">সকাল ৮টা থেকে রাত ১২টা</span>
+                        </div>
+                    </a>
+                    <a id="contact-facebook" href="#" class="block bg-gray-50 p-3 rounded-lg border border-gray-200 hover:bg-gray-100 transition no-underline">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fab fa-facebook-f text-blue-600"></i>
+                                <span class="font-semibold text-sm text-gray-700">Facebook HelpLine</span>
+                            </div>
+                            <span class="text-xs text-gray-500">সকাল ৮টা থেকে রাত ১২টা</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center border-t border-gray-200 pt-4 mt-6">
+                    <p class="text-xs text-gray-500">
+              © 2026 VIMAX TOPUP | All Rights Reserved | Developed By <a href="https://t.me/TeamNano" target="_blank" class="font-bold text-sky-600 no-underline hover:underline">Team Nano BD</a>
+                   </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TOPUP INTERFACE SECTION -->
+        <section id="topup-sec" class="hidden animate-fade-in pb-10">
+            <div class="flex items-center gap-3 mb-4 p-1">
+                <button onclick="showSec('home')" class="text-gray-600 hover:text-sky-500 w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-200">
+                    <i class="fas fa-arrow-left text-lg"></i>
+                </button>
+                <h2 class="text-lg font-bold text-gray-800" id="topup-game-title">Game Name</h2>
+            </div>
+
+            <div class="bg-white p-3 rounded-xl shadow-sm flex items-center gap-4 mb-4 border border-gray-100">
+                <img id="topup-game-img" src="" class="w-16 h-16 rounded-xl object-cover shadow-sm">
+                <div>
+                    <h3 class="font-bold text-gray-800 text-base" id="topup-sub-title">FF UID TOPUP (BD)</h3>
+                    <p class="text-xs text-gray-400 font-medium">Game / Topup</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm mb-4 border border-gray-100">
+                <div id="player-id-section">
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="bg-sky-600 text-white w-6 h-6 flex items-center justify-center rounded-full text-xs font-bold shadow-md">1</span>
+                        <h3 class="font-bold text-gray-700 text-sm">Player Id</h3>
+                    </div>
+                    <input type="number" id="game-player-id" placeholder="Inter Uid" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-lg focus:outline-none focus:border-sky-500 focus:bg-white transition font-bold text-gray-700 tracking-wider text-lg">
+                    
+                    <div id="uidCheckBtn" onclick="uidCheck()" class="mt-3 bg-gradient-to-r from-blue-400 to-teal-400 text-white text-center py-2 rounded-lg font-bold text-sm shadow-md cursor-pointer transition-all duration-300">
+                        Check to Player Name
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm mb-4 border border-gray-100">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="bg-sky-600 text-white w-6 h-6 flex items-center justify-center rounded-full text-xs font-bold shadow-md">2</span>
+                    <h3 class="font-bold text-gray-700 text-sm">Select Recharge</h3>
+                </div>
+
+                <div id="product-loader" class="text-center py-10 hidden">
+                    <i class="fas fa-spinner fa-spin text-sky-500 text-2xl"></i>
+                </div>
+
+                <div id="products-grid" class="grid grid-cols-2 gap-3">
+                    <!-- Products injected via JS -->
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm mb-4 border border-gray-100">
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="bg-sky-600 text-white w-6 h-6 flex items-center justify-center rounded-full text-xs font-bold shadow-md">3</span>
+                    <h3 class="font-bold text-gray-700 text-sm">Select Payment</h3>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mb-3">
+                    <div id="pay-mode-wallet" onclick="selectPaymentMode('wallet')" class="pay-method-card selected">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <div class="flex items-center gap-2 mb-2">
+                            <i class="fas fa-wallet text-sky-500 text-xl"></i>
+                            <span class="font-bold text-gray-800 text-sm">ওয়ালেট</span>
+                        </div>
+                        <p class="text-[11px] text-gray-500">Wallet Pay</p>
+                    </div>
+
+                    <div id="pay-mode-instant" onclick="selectPaymentMode('instant')" class="pay-method-card">
+                        <i class="fas fa-check-circle check-icon"></i>
+                        <div class="flex items-center gap-2 mb-2">
+                            <div class="flex gap-1">
+                                <img src="https://i.ibb.co.com/G3RRGjJ4/bkash.png" class="w-5 h-5 object-contain">
+                                <img src="https://i.ibb.co.com/PzT7ZqF9/nagad.png" class="w-6 h-5 object-contain">
+                                <img src="https://i.ibb.co.com/35XXn8VS/rocket.png" class="w-5 h-5 object-contain">
+                            </div>
+                        </div>
+                        <span class="font-bold text-gray-800 text-sm block">Instant Pay</span>
+                        <p class="text-[11px] text-gray-500">Auto Gateway</p>
+                    </div>
+                </div>
+
+                <div id="wallet-balance-info" class="text-xs text-gray-500">
+                    <i class="fas fa-info-circle mr-1"></i> আপনার একাউন্ট ব্যালেন্স ৳ <span id="topup-user-balance">0</span>
+                </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-sm mb-4 border border-gray-100">
+                <div>
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-sm font-bold text-gray-600">Total Payable</span>
+                        <span class="text-xl font-bold text-sky-600">৳ <span id="total-price">0</span></span>
+                    </div>
+                    <button onclick="processOrder()" class="w-full bg-sky-600 text-white py-3 rounded-lg font-bold shadow-lg hover:bg-sky-700 transition flex justify-center items-center gap-2 active:scale-95">
+                         BUY NOW
+                    </button>
+                </div>
+            </div>
+
+            <div id="game-rules-box" class="bg-blue-50 border border-blue-200 p-4 rounded-xl shadow-sm mb-6 hidden">
+                <div class="flex items-center gap-2 mb-2">
+                    <i class="fas fa-info-circle text-blue-600"></i>
+                    <h3 class="font-bold text-blue-700 text-sm">Important Rules</h3>
+                </div>
+                <p id="game-rules-text" class="text-xs text-blue-800 leading-relaxed font-medium"></p>
+            </div>
+        </section>
+
+        <!-- ADD MONEY SECTION -->
+        <section id="addmoney-sec" class="hidden animate-fade-in">
+            <h2 class="font-bold text-xl text-gray-800 mb-4 px-2">Add Money</h2>
+            
+            <div id="auto-payment-view" class="hidden">
+                 <div class="flex bg-gray-100 p-1 rounded-lg mb-6">
+                    <button class="w-full py-2 rounded-md font-bold text-sm bg-white shadow text-sky-600 transition">Automatic Payment</button>
+                </div>
+                
+                <div id="auto-payment-methods-grid" class="grid grid-cols-3 gap-3 mb-6">
+                     <div onclick="showAutoPaymentForm('bKash', 'https://i.ibb.co.com/G3RRGjJ4/bkash.png')" class="bg-white p-3 rounded-xl shadow-sm flex flex-col items-center justify-center cursor-pointer method-card h-28">
+                        <img src="https://i.ibb.co.com/G3RRGjJ4/bkash.png" class="w-12 h-12 object-contain mb-2">
+                        <span class="text-xs font-bold text-gray-600">bKash</span>
+                    </div>
+                    <div onclick="showAutoPaymentForm('Nagad', 'https://i.ibb.co.com/PzT7ZqF9/nagad.png')" class="bg-white p-3 rounded-xl shadow-sm flex flex-col items-center justify-center cursor-pointer method-card h-28">
+                        <img src="https://i.ibb.co.com/PzT7ZqF9/nagad.png" class="w-16 h-12 object-contain mb-2">
+                        <span class="text-xs font-bold text-gray-600">Nagad</span>
+                    </div>
+                    <div onclick="showAutoPaymentForm('Rocket', 'https://i.ibb.co.com/35XXn8VS/rocket.png')" class="bg-white p-3 rounded-xl shadow-sm flex flex-col items-center justify-center cursor-pointer method-card h-28">
+                        <img src="https://i.ibb.co.com/35XXn8VS/rocket.png" class="w-10 h-12 object-contain mb-2">
+                        <span class="text-xs font-bold text-gray-600">Rocket</span>
+                    </div>
+                </div>
+
+                <div id="auto-payment-form-container" class="hidden bg-white p-5 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center gap-2">
+                            <img id="auto-form-logo" src="" class="w-8 h-8 object-contain">
+                            <h3 id="auto-form-method-name" class="font-bold text-lg text-gray-800">Method</h3>
+                        </div>
+                        <button onclick="resetAutoAddMoney()" class="text-gray-400 hover:text-red-500"><i class="fas fa-times"></i></button>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-3 rounded-lg border border-gray-200 mb-4 flex justify-between items-center">
+                        <div>
+                            <p class="text-[10px] text-gray-500">Send Money (Personal)</p>
+                            <p id="auto-admin-number" class="font-mono font-bold text-lg tracking-wider text-gray-700">Loading...</p>
+                        </div>
+                        <button onclick="copyAutoNumber()" class="bg-white p-2 rounded shadow-sm text-sky-600"><i class="far fa-copy"></i></button>
+                    </div>
+
+                    <div class="space-y-4">
+                        <input type="text" id="auto-dep-trx" placeholder="Transaction ID" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-lg font-bold uppercase focus:outline-none focus:border-sky-500">
+                        <button onclick="verifyAutoPayment()" class="w-full bg-sky-600 text-white py-3 rounded-lg font-bold shadow-lg hover:bg-sky-700 transition">Verify Payment</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="manual-payment-view" class="hidden">
+                <div class="flex bg-gray-100 p-1 rounded-lg mb-6">
+                    <button onclick="toggleAddMoneyView('form')" id="btn-addmoney-view" class="w-1/2 py-2 rounded-md font-bold text-sm bg-white shadow text-sky-600 transition">Add Money</button>
+                    <button onclick="toggleAddMoneyView('history')" id="btn-history-view" class="w-1/2 py-2 rounded-md font-bold text-sm text-gray-500 transition">Deposit History</button>
+                </div>
+
+                <div id="add-money-content">
+                    <div id="payment-methods-grid" class="grid grid-cols-3 gap-3 mb-6">
+                        <div onclick="showPaymentForm('bKash', 'https://i.ibb.co.com/G3RRGjJ4/bkash.png')" class="bg-white p-3 rounded-xl shadow-sm flex flex-col items-center justify-center cursor-pointer method-card h-28">
+                            <img src="https://i.ibb.co.com/G3RRGjJ4/bkash.png" class="w-12 h-12 object-contain mb-2">
+                            <span class="text-xs font-bold text-gray-600">bKash</span>
+                        </div>
+                        <div onclick="showPaymentForm('Nagad', 'https://i.ibb.co.com/PzT7ZqF9/nagad.png')" class="bg-white p-3 rounded-xl shadow-sm flex flex-col items-center justify-center cursor-pointer method-card h-28">
+                            <img src="https://i.ibb.co.com/PzT7ZqF9/nagad.png" class="w-16 h-12 object-contain mb-2">
+                            <span class="text-xs font-bold text-gray-600">Nagad</span>
+                        </div>
+                        <div onclick="showPaymentForm('Rocket', 'https://i.ibb.co.com/35XXn8VS/rocket.png')" class="bg-white p-3 rounded-xl shadow-sm flex flex-col items-center justify-center cursor-pointer method-card h-28">
+                            <img src="https://i.ibb.co.com/35XXn8VS/rocket.png" class="w-10 h-12 object-contain mb-2">
+                            <span class="text-xs font-bold text-gray-600">Rocket</span>
+                        </div>
+                    </div>
+
+                    <div id="payment-form-container" class="hidden bg-white p-5 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="flex items-center gap-2">
+                                <img id="form-logo" src="" class="w-8 h-8 object-contain">
+                                <h3 id="form-method-name" class="font-bold text-lg text-gray-800">Method</h3>
+                            </div>
+                            <button onclick="resetAddMoney()" class="text-gray-400 hover:text-red-500"><i class="fas fa-times"></i></button>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-3 rounded-lg border border-gray-200 mb-4 flex justify-between items-center">
+                            <div>
+                                <p class="text-[10px] text-gray-500">Send Money (Personal)</p>
+                                <p id="admin-number" class="font-mono font-bold text-lg tracking-wider text-gray-700">Loading...</p>
+                            </div>
+                            <button onclick="copyNumber()" class="bg-white p-2 rounded shadow-sm text-sky-600"><i class="far fa-copy"></i></button>
+                        </div>
+
+                        <div class="space-y-4">
+                            <input type="number" id="dep-amount" placeholder="Amount" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-lg font-bold focus:outline-none focus:border-sky-500">
+                            <input type="text" id="dep-trx" placeholder="Transaction ID" class="w-full bg-gray-50 border border-gray-200 p-3 rounded-lg font-bold uppercase focus:outline-none focus:border-sky-500">
+                            <button onclick="submitDeposit()" class="w-full bg-sky-600 text-white py-3 rounded-lg font-bold shadow-lg hover:bg-sky-700 transition">Verify & Add Money</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="deposit-history-content" class="hidden">
+                    <div id="deposit-history-list" class="space-y-3 px-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TUTORIAL SECTION -->
+        <section id="tutorial-sec" class="hidden animate-fade-in pb-20">
+            <div class="px-5 pt-6 mb-4">
+                <h2 class="text-2xl font-bold text-gray-800">Tutorials</h2>
+            </div>
+            <div id="tutorial-list-container" class="space-y-6"></div>
+        </section>
+
+        <!-- ACCOUNT SECTION -->
+        <section id="account-sec" class="hidden animate-fade-in">
+            <div class="bg-white p-6 rounded-xl shadow-sm mb-4 text-center border border-gray-100">
+                <div class="w-20 h-20 bg-sky-50 rounded-full mx-auto flex items-center justify-center text-sky-500 text-3xl mb-3 shadow-inner">
+                    <i class="fas fa-user-circle text-5xl"></i>
+                </div>
+                
+                <h2 id="profile-name" class="font-bold text-xl text-gray-800">User Name</h2>
+                <p id="profile-email" class="text-xs text-gray-500 mb-6 font-mono">user@email.com</p>
+
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="bg-sky-50 p-3 rounded-2xl border border-sky-100 flex flex-col items-center justify-center">
+                        <div class="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center text-sky-600 mb-1">
+                            <i class="fas fa-wallet text-sm"></i>
+                        </div>
+                        <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Balance</p>
+                        <p class="text-sm font-extrabold text-sky-600">৳ <span id="profile-balance">0</span></p>
+                    </div>
+
+                    <div class="bg-blue-50 p-3 rounded-2xl border border-blue-100 flex flex-col items-center justify-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-1">
+                            <i class="fas fa-shopping-bag text-sm"></i>
+                        </div>
+                        <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Orders</p>
+                        <p class="text-sm font-extrabold text-blue-600" id="profile-total-orders">0</p>
+                    </div>
+
+                    <div class="bg-purple-50 p-3 rounded-2xl border border-purple-100 flex flex-col items-center justify-center">
+                        <div class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mb-1">
+                            <i class="fas fa-coins text-sm"></i>
+                        </div>
+                        <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Spent</p>
+                        <p class="text-sm font-extrabold text-purple-600">৳ <span id="profile-total-spent">0</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                <button onclick="showSec('history')" class="w-full flex items-center justify-between p-4 border-b border-gray-100 hover:bg-gray-50 transition">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-blue-500"><i class="fas fa-history"></i></div>
+                        <span class="text-sm font-semibold text-gray-700">Order History</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                </button>
+                
+                <button onclick="showSec('addmoney')" class="w-full flex items-center justify-between p-4 border-b border-gray-100 hover:bg-gray-50 transition">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-green-50 flex items-center justify-center text-green-500"><i class="fas fa-plus-circle"></i></div>
+                        <span class="text-sm font-semibold text-gray-700">Add Money</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-300 text-xs"></i>
+                </button>
+
+                <button onclick="exportUserDataTxt()" class="w-full flex items-center justify-between p-4 border-b border-gray-100 hover:bg-purple-50 transition">
+                    <div class="flex items-center gap-3"><div class="w-8 h-8 rounded-lg flex items-center justify-center text-purple-600" style="background:#f1eaff"><i class="fas fa-file-arrow-down"></i></div><span class="text-sm font-semibold text-gray-700">Export My Data (.txt)</span></div><i class="fas fa-download text-gray-300 text-xs"></i>
+                </button>
+
+                <button onclick="handleLogout()" class="w-full flex items-center justify-between p-4 hover:bg-red-50 text-red-500 transition group">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-red-50 flex items-center justify-center group-hover:bg-red-200 transition"><i class="fas fa-sign-out-alt"></i></div>
+                        <span class="text-sm font-bold">Log Out</span>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+        <!-- HISTORY SECTION -->
+        <section id="history-sec" class="hidden animate-fade-in pb-24">
+            <div class="px-4 pt-4 mb-2">
+                <h2 class="text-xl font-bold text-gray-800 border-l-4 border-sky-500 pl-2">Order History</h2>
+            </div>
+            <div id="history-list" class="px-4"></div>
+        </section>
+
+    </main>
+    
+    <!-- Floating Action Button (FAB) -->
+    <div id="fab-container" class="fixed bottom-20 right-4 z-50">
+        <div class="flex items-center gap-2">
+            <div id="fab-help-text" class="bg-red-500 text-white text-xs font-semibold px-2 py-1.5 rounded-lg shadow-md transition-opacity duration-300">
+                সাহায্য লাগবে ?
+            </div>
+            
+            <div class="relative flex flex-col items-center">
+                <div id="fab-options" class="absolute bottom-14 space-y-1.5 transition-all duration-300 ease-out transform translate-y-4 opacity-0 pointer-events-none">
+                     <a id="link-whatsapp" href="#" target="_blank" class="flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg hover:bg-gray-100 no-underline">
+                        <i class="fab fa-whatsapp text-xl text-[#25D366]"></i>
+                    </a>
+                     <a id="link-telegram" href="#" target="_blank" class="flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-lg hover:bg-gray-100 no-underline">
+                        <i class="fab fa-telegram-plane text-xl text-[#0088cc]"></i>
+                    </a>
+                </div>
+                <button id="fab-toggler" onclick="toggleFabMenu()" class="relative w-12 h-12 bg-red-500 rounded-full flex items-center justify-center text-white text-xl shadow-xl transition-all duration-300 ease-in-out hover:bg-red-600 focus:outline-none">
+                    <i id="fab-icon-open" class="fas fa-phone-alt transition-all duration-300 transform"></i>
+                    <i id="fab-icon-close" class="fas fa-times absolute transition-all duration-300 transform scale-0 opacity-0 -rotate-180"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Glass Bottom Navigation -->
+    <nav class="vx-bottom-nav" aria-label="Main navigation">
+      <div class="flex items-center justify-between gap-1">
+        <button onclick="showSec('home')" class="nav-item flex flex-col items-center justify-center active-tab" id="nav-home"><i class="fas fa-house"></i><span>Home</span></button>
+        <button onclick="showSec('tutorial')" class="nav-item flex flex-col items-center justify-center" id="nav-tutorial"><i class="fas fa-compass"></i><span>Explore</span></button>
+        <button onclick="showSec('addmoney')" class="nav-item flex flex-col items-center justify-center" id="nav-addmoney"><i class="fas fa-wallet"></i><span>Wallet</span></button>
+        <button onclick="showSec('history')" class="nav-item flex flex-col items-center justify-center" id="nav-history"><i class="fas fa-receipt"></i><span>Orders</span></button>
+        <button onclick="showSec('account')" class="nav-item flex flex-col items-center justify-center" id="nav-account"><i class="fas fa-user-astronaut"></i><span>Account</span></button>
+      </div>
+    </nav>
+</div>
+
 <script>
-/* SETUP: Replace these two values with your Supabase project URL and anon key. */
-const SUPABASE_URL="https://jarvddoqktnvwquqocyp.supabase.co";
-const SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImphcnZkZG9xa3RudndxdXFvY3lwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI1OTU2MTMsImV4cCI6MjEwODE3MTYxM30.HTY0uRuaXp-ljAUOCJTOE583p5-kbVwCMV5b_DekFRQ";
-const READY=SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.length>40;
-const db=READY?supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
-const $=id=>document.getElementById(id);let adminToken=sessionStorage.getItem('crazi_admin_token')||'';
-function toast(s){$('toast').textContent=s;$('toast').style.display='block';setTimeout(()=>$('toast').style.display='none',3000)}
-function go(page){if(page==='post')page='home';['home','apply','more','admin'].forEach(x=>$(x+'View').classList.toggle('hidden',x!==page));history.pushState({},'',page==='home'?'#home':'#'+page);if(page==='admin'&&adminToken)adminTab('posts');window.scrollTo({top:0,behavior:'smooth'})}
-function closeModal(){$('modal').classList.add('hidden')}
-function modal(title,body){$('modalTitle').textContent=title;$('modalBody').innerHTML=body;$('modal').classList.remove('hidden')}
-function bytesToHex(b){return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
-async function sha(s){return bytesToHex(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s)))}
-function randomKey(){const a=new Uint8Array(18);crypto.getRandomValues(a);return 'CRZ-'+btoa(String.fromCharCode(...a)).replace(/[+/=]/g,'').toUpperCase().slice(0,24)}
-let profile=JSON.parse(localStorage.getItem('crazi_profile')||'null');
-async function ensureProfile(){if(!profile){let key=randomKey();profile={id:crypto.randomUUID(),recoveryKey:key,displayName:'Community Member',createdAt:new Date().toISOString()};localStorage.setItem('crazi_profile',JSON.stringify(profile));if(db){const {error}=await db.from('profiles').insert({id:profile.id,recovery_hash:await sha(key),display_name:profile.displayName});if(error)console.warn(error)}}}
-function showKey(){modal('Your Recovery Key',`<p>এই Key অন্য ফোনে ব্যবহার করে প্রোফাইল ফিরিয়ে আনো।</p><div class="field" style="word-break:break-all">${profile.recoveryKey}</div><button onclick="copyKey()">Copy Recovery Key</button><p class="muted">Key হারালে এই ডিভাইস থেকে পুনরায় দেখা সম্ভব নাও হতে পারে। নিরাপদ স্থানে রাখো।</p>`)}
-function copyKey(){navigator.clipboard?.writeText(profile.recoveryKey);toast('Recovery Key copied')}
-function openRecovery(){modal('Recover your profile',`<p class="muted">অন্য ফোনে পাওয়া Recovery Key লিখে Restore করো। এটি একই Supabase project-এর profile ফিরিয়ে আনবে।</p><input id="recoverKey" class="field" placeholder="CRZ-..."><button onclick="recoverProfile()">Restore Profile</button>`)}
-async function recoverProfile(){if(!db)return toast('আগে Supabase সেটআপ করো');const key=$('recoverKey').value.trim();if(!key)return toast('Recovery Key লিখো');const {data,error}=await db.rpc('recover_profile',{p_recovery_hash:await sha(key)});const recovered=Array.isArray(data)?data[0]:data;if(error||!recovered?.id)return toast('Key পাওয়া যায়নি');profile={id:recovered.id,recoveryKey:key,displayName:recovered.display_name||'Community Member',createdAt:recovered.created_at};localStorage.setItem('crazi_profile',JSON.stringify(profile));closeModal();toast('Profile restored');}
-async function uploadImage(file){if(!file)return null;if(file.size>5*1024*1024)throw Error('ছবি 5MB-এর বেশি হতে পারবে না');if(!db)throw Error('Supabase সেটআপ করা হয়নি');const path=`${profile.id}/${Date.now()}-${file.name.replace(/[^a-zA-Z0-9._-]/g,'_')}`;const {error}=await db.storage.from('community-media').upload(path,file,{upsert:false});if(error)throw error;return db.storage.from('community-media').getPublicUrl(path).data.publicUrl}
-async function createPost(){try{if(!db)return toast('Supabase URL ও anon key সেট করো');let content=$('postText').value.trim();let file=$('postImage').files[0];if(!content&&!file)return toast('লেখা বা ছবি যোগ করো');let image_url=await uploadImage(file);const {error}=await db.from('posts').insert({author_id:profile.id,author_name:profile.displayName,content,image_url});if(error)throw error;$('postText').value='';$('postImage').value='';toast('Post published');loadPosts()}catch(e){toast(e.message)}}
-async function loadPosts(){if(!db){$('feed').innerHTML='<div class="empty">Supabase configure করলে live posts দেখা যাবে।</div>';return}const {data,error}=await db.from('posts').select('*,comments(*)').order('created_at',{ascending:false}).limit(50);if(error){$('feed').innerHTML='<div class="empty">পোস্ট লোড হয়নি: '+error.message+'</div>';return}$('feed').innerHTML=data.length?data.map(p=>`<article class="post"><div class="posthead"><div class="author"><div class="avatar">C</div><div><b>${esc(p.author_name||'Member')}</b><div class="muted">${new Date(p.created_at).toLocaleString()}</div></div></div><span class="pill">COMMUNITY</span></div><p>${esc(p.content||'')}</p>${p.image_url?`<img src="${esc(p.image_url)}" alt="Post image">`:''}<div class="actions"><button class="secondary" onclick="likePost('${p.id}')">♡ Like</button><span class="muted">${p.like_count||0} likes</span></div><div>${(p.comments||[]).map(c=>`<div class="comment"><b>${esc(c.author_name||'Member')}:</b> ${esc(c.body)}</div>`).join('')}</div><div class="actions"><input class="field" style="flex:1;margin:0" id="c-${p.id}" placeholder="Comment লিখো..."><button onclick="commentPost('${p.id}')">Send</button></div></article>`).join(''):'<div class="empty">এখনো কোনো পোস্ট নেই। প্রথম পোস্টটি তুমি করো!</div>'}
-function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-async function likePost(id){const {error}=await db.from('post_likes').insert({post_id:id,profile_id:profile.id});if(error&&error.code!=='23505')toast(error.message);else{await db.rpc('increment_post_like',{p_post_id:id});loadPosts()}}
-async function commentPost(id){const input=$('c-'+id),body=input.value.trim();if(!body)return;const {error}=await db.from('comments').insert({post_id:id,profile_id:profile.id,author_name:profile.displayName,body});if(error)toast(error.message);else loadPosts()}
-async function submitApplication(){try{if(!db)return toast('Supabase configure করো');let image_url=await uploadImage($('appImage').files[0]);const {error}=await db.from('applications').insert({profile_id:profile.id,applicant_name:$('appName').value.trim(),topic:$('appTopic').value.trim(),details:$('appDetails').value.trim(),image_url});if(error)throw error;toast('আবেদন Admin-এর কাছে পাঠানো হয়েছে');$('appName').value=$('appTopic').value=$('appDetails').value='';$('appImage').value=''}catch(e){toast(e.message)}}
-async function adminCall(action,extra={}){const r=await fetch(SUPABASE_URL+'/functions/v1/crazi-admin',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+SUPABASE_ANON_KEY,'x-admin-token':adminToken},body:JSON.stringify({action,...extra})});let j=await r.json();if(!r.ok)throw Error(j.error||'Admin request failed');return j}
-async function adminLogin(){try{const pass=$('adminPass').value;const r=await fetch(SUPABASE_URL+'/functions/v1/crazi-admin',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+SUPABASE_ANON_KEY},body:JSON.stringify({action:'login',password:pass})});const j=await r.json();if(!r.ok)throw Error(j.error||'Login failed');adminToken=j.token;sessionStorage.setItem('crazi_admin_token',adminToken);$('adminLogin').classList.add('hidden');$('adminPanel').classList.remove('hidden');adminTab('posts')}catch(e){toast(e.message)}}
-function adminLogout(){adminToken='';sessionStorage.removeItem('crazi_admin_token');$('adminLogin').classList.remove('hidden');$('adminPanel').classList.add('hidden')}
-async function adminTab(tab){try{if(tab==='notice'){$('adminContent').innerHTML=`<textarea id="noticeText" class="field" placeholder="Notice লিখো"></textarea><button onclick="saveNotice()">Publish Notice</button>`;return}const j=await adminCall(tab);$('adminContent').innerHTML=(j.items||[]).map(x=>`<div class="comment"><b>${esc(x.author_name||x.applicant_name||'Member')}</b><p>${esc(x.content||x.details||x.topic||'')}</p>${x.image_url?`<a target="_blank" href="${esc(x.image_url)}">ছবি দেখুন</a>`:''}<div class="actions">${tab==='apps'?`<span class="pill">${esc(x.status||'pending')}</span><button onclick="updateApp('${x.id}','approved')">Approve</button><button class="secondary" onclick="updateApp('${x.id}','rejected')">Reject</button>`:''}<button class="danger" onclick="deleteItem('${tab}','${x.id}')">Delete</button></div></div>`).join('')||'<p class="muted">কোনো item নেই।</p>'}catch(e){toast(e.message)}}
-async function updateApp(id,status){try{await adminCall('update_application',{id,status});adminTab('apps')}catch(e){toast(e.message)}}
-async function deleteItem(type,id){if(!confirm('এটি Delete করবে?'))return;try{await adminCall('delete_'+type,{id});adminTab(type)}catch(e){toast(e.message)}}
-async function saveNotice(){try{await adminCall('notice',{message:$('noticeText').value});toast('Notice published');loadNotice()}catch(e){toast(e.message)}}
-async function loadNotice(){if(!db)return;const {data}=await db.from('notices').select('message').order('created_at',{ascending:false}).limit(1).maybeSingle();if(data)$('notice').textContent=data.message}
-function exportBackup(){const blob=new Blob([JSON.stringify({profile},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='crazi-recovery-backup.json';a.click();URL.revokeObjectURL(a.href)}
-function importBackup(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const j=JSON.parse(r.result);if(!j.profile?.id||!j.profile?.recoveryKey)throw Error();profile=j.profile;localStorage.setItem('crazi_profile',JSON.stringify(profile));toast('Backup imported');}catch{toast('Invalid backup file')}};r.readAsText(f)}
-window.addEventListener('popstate',()=>{let p=(location.hash||'#home').slice(1);go(['home','apply','more','admin'].includes(p)?p:'home')});
-(async()=>{await ensureProfile();if(!READY){$('deviceState').textContent='Demo / Backend not connected';$('feed').innerHTML='<div class="empty">Supabase সেটআপ না হওয়া পর্যন্ত Community live হবে না।</div>'}else{loadPosts();loadNotice()}let p=(location.hash||'#home').slice(1);go(['home','apply','more','admin'].includes(p)?p:'home')})();
-</script></body></html>
+    // --- 1. FIREBASE CONFIGURATION ---
+    const firebaseConfig = {
+    apiKey: "AIzaSyAnS_6lAVSbf0oM5R1VgKiQjlH7MGbiqTE",
+    authDomain: "sjemar-bdc9d.firebaseapp.com",
+    databaseURL: "https://sjemar-bdc9d-default-rtdb.firebaseio.com",
+    projectId: "sjemar-bdc9d",
+    storageBucket: "sjemar-bdc9d.firebasestorage.app",
+    messagingSenderId: "89516060006",
+    appId: "1:89516060006:web:74ff45281b818dfc612ca7",
+    measurementId: "G-6WQY9FYK0P"
+};
+
+    if (!firebase.apps.length) firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebase.auth();
+    const rtdb = firebase.database();
+
+    let currentUser = null;
+    let userBalance = 0;
+    let selectedProduct = null;
+    let selectedGameId = null;
+    let selectedGameName = "";
+    let selectedGameType = 'uid';
+    let gamesData = {};
+    let isAutoPayEnabled = false;
+    let selectedPaymentMode = 'wallet';
+
+    function loadGlobalSettings() {
+        db.collection("settings").doc("general").onSnapshot((doc) => {
+            if (doc.exists) {
+                const data = doc.data();
+                const logoUrl = data.logoUrl || "https://placehold.co/150x50?text=No+Logo";
+                const siteName = data.siteName || "VIMAX TOPUP";
+                
+                isAutoPayEnabled = data.autoPayEnabled === true;
+                
+                const authLogo=document.getElementById('auth-logo-img'); if(authLogo) authLogo.src=logoUrl;
+                const headerLogo=document.getElementById('header-logo-img'); if(headerLogo) headerLogo.src=logoUrl;
+                const aboutLogo=document.getElementById('about-logo-img'); if(aboutLogo) aboutLogo.src=logoUrl;
+                const aboutName=document.getElementById('about-site-name'); if(aboutName) aboutName.innerText=siteName;
+
+                document.title = siteName;
+            }
+        }, (error) => {
+            console.error("Settings load error:", error);
+        });
+    }
+    loadGlobalSettings();
+
+    // --- VIMAX AUTH v2: stable one-time verification flow ---
+    let authBusy = false;
+    let verificationLastSentAt = Number(localStorage.getItem('vimax_verify_sent_at')||0);
+    let activeAuthUid = null;
+    let authRedirectHandled = false;
+    const VERIFY_RESEND_COOLDOWN_MS = 60000;
+    function authToast(title, icon='info') { Swal.fire({toast:true,position:'top',icon,title,showConfirmButton:false,timer:2600,timerProgressBar:true}); }
+    function setAuthBusy(button,busy){if(!button)return;button.disabled=busy;if(busy){button.dataset.prevHtml=button.innerHTML;button.innerHTML='<i class="fas fa-circle-notch fa-spin"></i> Please wait...';}else if(button.dataset.prevHtml){button.innerHTML=button.dataset.prevHtml;delete button.dataset.prevHtml;}}
+    function toggleAuth(view){
+      const login=view==='login';
+      document.getElementById('login-form').classList.toggle('hidden',!login);
+      document.getElementById('register-form').classList.toggle('hidden',login);
+      if(!auth.currentUser || auth.currentUser.emailVerified) document.getElementById('verify-panel').classList.add('hidden');
+      document.getElementById('btn-login-view').classList.toggle('bg-white',login);
+      document.getElementById('btn-reg-view').classList.toggle('bg-white',!login);
+      document.getElementById('btn-login-view').classList.toggle('shadow',login);
+      document.getElementById('btn-reg-view').classList.toggle('shadow',!login);
+    }
+    function showVerifyPanel(email){
+      document.getElementById('auth-sec').classList.remove('hidden');
+      document.getElementById('app-content').classList.add('hidden');
+      document.getElementById('login-form').classList.add('hidden');
+      document.getElementById('register-form').classList.add('hidden');
+      document.getElementById('verify-email-text').textContent='A verification link was sent to '+(email||'your email')+'. Open it once, then return and tap Check Status. We do not send emails automatically on page reload.';
+      document.getElementById('verify-panel').classList.remove('hidden');
+    }
+    async function sendVerificationOnce(user,force=false){
+      if(!user)throw new Error('Please sign in again.');
+      const now=Date.now();
+      if(!force && now-verificationLastSentAt<VERIFY_RESEND_COOLDOWN_MS)throw new Error('Please wait before requesting another verification email.');
+      const actionCodeSettings={url:location.origin+location.pathname,handleCodeInApp:false};
+      await user.sendEmailVerification(actionCodeSettings);
+      verificationLastSentAt=Date.now();try{localStorage.setItem('vimax_verify_sent_at',String(verificationLastSentAt));}catch(_){}
+    }
+    async function handleRegister(){
+      if(authBusy)return;
+      const name=document.getElementById('reg-name').value.trim(),email=document.getElementById('reg-email').value.trim(),phone=document.getElementById('reg-phone').value.trim(),pass=document.getElementById('reg-pass').value;
+      if(!name||!email||!pass)return Swal.fire('Missing details','Name, email and password are required.','warning');
+      if(pass.length<6)return Swal.fire('Weak password','Use at least 6 characters.','warning');
+      const btn=document.getElementById('register-submit');authBusy=true;setAuthBusy(btn,true);
+      try{
+        const cred=await auth.createUserWithEmailAndPassword(email,pass);
+        await cred.user.updateProfile({displayName:name});
+        await db.collection('users').doc(cred.user.uid).set({name,email,phone,balance:0,createdAt:firebase.firestore.FieldValue.serverTimestamp(),emailVerified:false,provider:'password'},{merge:true});
+        await sendVerificationOnce(cred.user,true);
+        showVerifyPanel(email);authToast('Verification email sent once','success');
+      }catch(err){console.error('Register error',err);Swal.fire('Registration failed',friendlyAuthError(err),'error');}
+      finally{authBusy=false;setAuthBusy(btn,false);}
+    }
+    async function handleLogin(){
+      if(authBusy)return;
+      const email=document.getElementById('login-email').value.trim(),pass=document.getElementById('login-pass').value;
+      if(!email||!pass)return Swal.fire('Missing details','Enter email and password.','warning');
+      const btn=document.getElementById('login-submit');authBusy=true;setAuthBusy(btn,true);
+      try{
+        const cred=await auth.signInWithEmailAndPassword(email,pass);
+        await cred.user.reload();
+        const fresh=auth.currentUser||cred.user;
+        if(!fresh.emailVerified){showVerifyPanel(email);authToast('Verify your email once to continue','warning');}
+        else await enterVimaxApp(fresh);
+      }catch(err){Swal.fire('Login failed',friendlyAuthError(err),'error');}
+      finally{authBusy=false;setAuthBusy(btn,false);}
+    }
+    async function signInWithGoogle(){await oauthSignIn(new firebase.auth.GoogleAuthProvider(),'google-login');}
+    async function signInWithGithub(){const p=new firebase.auth.GithubAuthProvider();p.addScope('user:email');await oauthSignIn(p,'github-login');}
+    async function oauthSignIn(provider,buttonId){
+      if(authBusy)return;authBusy=true;const btn=document.getElementById(buttonId);setAuthBusy(btn,true);
+      try{
+        const result=await auth.signInWithPopup(provider);
+        if(result&&result.user)await ensureSocialProfile(result.user,provider.providerId);
+      }catch(err){
+        if(err.code==='auth/popup-blocked'||err.code==='auth/operation-not-supported-in-this-environment'||err.code==='auth/web-storage-unsupported'){
+          try{await auth.signInWithRedirect(provider);return;}catch(e){Swal.fire('Sign-in unavailable',friendlyAuthError(e),'error');}
+        }else if(err.code!=='auth/popup-closed-by-user')Swal.fire('Social login failed',friendlyAuthError(err),'error');
+      }finally{authBusy=false;setAuthBusy(btn,false);}
+    }
+    async function ensureSocialProfile(u,providerId){
+      const ref=db.collection('users').doc(u.uid),snap=await ref.get();
+      const profile={name:u.displayName||'Vimax User',email:u.email||'',photoURL:u.photoURL||'',provider:providerId,emailVerified:!!u.emailVerified};
+      if(!snap.exists)profile.balance=0;
+      profile.lastLoginAt=firebase.firestore.FieldValue.serverTimestamp();
+      await ref.set(profile,{merge:true});
+    }
+    function friendlyAuthError(err){const map={'auth/email-already-in-use':'This email already has an account. Try signing in.','auth/invalid-email':'Invalid email address.','auth/weak-password':'Password is too weak.','auth/user-not-found':'No account found for this email.','auth/wrong-password':'Incorrect password.','auth/invalid-credential':'Email or password is incorrect.','auth/popup-closed-by-user':'Sign-in window was closed.','auth/account-exists-with-different-credential':'This email already uses another sign-in method.','auth/operation-not-allowed':'Enable this sign-in provider in Firebase Authentication settings.','auth/unauthorized-domain':'Add this website domain to Firebase Authorized domains.','auth/too-many-requests':'Too many attempts. Please wait and try again.','auth/network-request-failed':'Network error. Check your internet connection.'};return map[err.code]||err.message||'Something went wrong. Please try again.';}
+    async function resendVerification(){
+      const btn=document.getElementById('resend-verify-btn');if(authBusy)return;
+      try{const u=auth.currentUser;if(!u)throw new Error('Sign in with your email and password first.');await u.reload();const fresh=auth.currentUser||u;if(fresh.emailVerified){await enterVimaxApp(fresh);return;}await sendVerificationOnce(fresh,false);authToast('Verification email sent','success');}
+      catch(e){Swal.fire('Unable to send',e.message||friendlyAuthError(e),'info');}
+    }
+    async function checkVerification(){
+      const btn=document.getElementById('check-verify-btn');if(authBusy)return;authBusy=true;setAuthBusy(btn,true);
+      try{
+        const u=auth.currentUser;if(!u)throw new Error('Your session expired. Please sign in again.');
+        await u.reload();const fresh=auth.currentUser||u;
+        if(fresh.emailVerified){await db.collection('users').doc(fresh.uid).set({emailVerified:true},{merge:true});authToast('Email verified successfully','success');await enterVimaxApp(fresh);}
+        else authToast('Not verified yet. Open the latest email link first.','warning');
+      }catch(e){Swal.fire('Check failed',e.message||friendlyAuthError(e),'error');}
+      finally{authBusy=false;setAuthBusy(btn,false);}
+    }
+    async function cancelUnverifiedLogin(){try{await auth.signOut();document.getElementById('verify-panel').classList.add('hidden');toggleAuth('login');}catch(e){console.error(e);}}
+    async function resetPassword(){const email=document.getElementById('login-email').value.trim();if(!email)return Swal.fire('Email required','Enter your email address first.','info');try{await auth.sendPasswordResetEmail(email);authToast('Password reset email sent','success');}catch(e){Swal.fire('Unable to reset',friendlyAuthError(e),'error');}}
+    async function enterVimaxApp(user){
+      if(!user)return;currentUser=user;activeAuthUid=user.uid;
+      if(window.__vimaxEnteringUid===user.uid)return;
+      window.__vimaxEnteringUid=user.uid;
+      try{
+        const ref=db.collection('users').doc(user.uid),snap=await ref.get();
+        if(!snap.exists){await ref.set({name:user.displayName||'Vimax User',email:user.email||'',photoURL:user.photoURL||'',balance:0,emailVerified:!!user.emailVerified,provider:user.providerData[0]?.providerId||'unknown',createdAt:firebase.firestore.FieldValue.serverTimestamp()},{merge:true});}
+        else if(user.emailVerified && snap.data().emailVerified!==true)await ref.set({emailVerified:true},{merge:true});
+        document.getElementById('verify-panel').classList.add('hidden');
+        document.getElementById('auth-sec').classList.add('hidden');document.getElementById('app-content').classList.remove('hidden');
+        if(window.__vimaxLoadedUid!==user.uid){window.__vimaxLoadedUid=user.uid;loadUserData(user.uid);calculateUserStats(user.uid);loadAppContent();}
+      }finally{window.__vimaxEnteringUid=null;}
+    }
+    function handleLogout(){auth.signOut().then(()=>{activeAuthUid=null;window.__vimaxLoadedUid=null;location.reload();});}
+    auth.getRedirectResult().then(async result=>{if(result&&result.user){await ensureSocialProfile(result.user,result.providerId||result.user.providerData[0]?.providerId||'social');}}).catch(err=>{if(err)Swal.fire('Sign-in failed',friendlyAuthError(err),'error');});
+    window.addEventListener('focus',async()=>{
+      const u=auth.currentUser;
+      if(!u || document.getElementById('verify-panel').classList.contains('hidden'))return;
+      try{await u.reload();const fresh=auth.currentUser||u;if(fresh.emailVerified){await db.collection('users').doc(fresh.uid).set({emailVerified:true},{merge:true});await enterVimaxApp(fresh);}}
+      catch(e){console.warn('Verification refresh:',e);}
+    });
+    auth.onAuthStateChanged(async(user)=>{
+      if(!user){currentUser=null;activeAuthUid=null;window.__vimaxLoadedUid=null;document.getElementById('auth-sec').classList.remove('hidden');document.getElementById('app-content').classList.add('hidden');document.getElementById('verify-panel').classList.add('hidden');return;}
+      currentUser=user;
+      try{await user.reload();}catch(e){console.warn('Auth refresh skipped',e);}
+      const fresh=auth.currentUser||user;
+      const hasPasswordProvider=(fresh.providerData||[]).some(p=>p.providerId==='password');
+      if(hasPasswordProvider&&!fresh.emailVerified){showVerifyPanel(fresh.email);return;}
+      try{await enterVimaxApp(fresh);}catch(e){console.error('App initialization failed',e);Swal.fire('Unable to load account','Please check your connection and try again.','error');}
+    });
+
+    function loadUserData(uid) {
+        db.collection('users').doc(uid).onSnapshot((doc) => {
+            if (doc.exists) {
+                const data = doc.data();
+                userBalance = data.balance || 0;
+                document.getElementById('header-balance').innerText = userBalance;
+                document.getElementById('profile-name').innerText = data.name || "User";
+                document.getElementById('profile-email').innerText = data.email;
+                document.getElementById('profile-balance').innerText = userBalance;
+                document.getElementById('topup-user-balance').innerText = userBalance;
+            }
+        }, (error) => {
+            console.error("User data load error:", error);
+        });
+    }
+
+    function calculateUserStats(uid) {
+        document.getElementById('profile-total-orders').innerText = "...";
+        document.getElementById('profile-total-spent').innerText = "...";
+
+        db.collection('orders').where('userId', '==', uid).get().then((snapshot) => {
+            let totalOrders = 0;
+            let totalSpent = 0;
+
+            snapshot.forEach((doc) => {
+                const data = doc.data();
+                totalOrders++;
+                const status = data.status ? data.status.toLowerCase() : '';
+                if (status === 'success' || status === 'complete' || status === 'completed') {
+                    totalSpent += parseInt(data.price || 0);
+                }
+            });
+
+            document.getElementById('profile-total-orders').innerText = totalOrders;
+            document.getElementById('profile-total-spent').innerText = totalSpent;
+        }).catch(err => {
+            console.error("Stats Error:", err);
+            document.getElementById('profile-total-orders').innerText = "0";
+            document.getElementById('profile-total-spent').innerText = "0";
+        });
+    }
+
+    function loadAppContent() {
+        db.collection("settings").doc("general").onSnapshot((doc) => {
+            if(doc.exists) {
+                const data = doc.data();
+                if(data.notice) document.getElementById('notice-text').innerText = data.notice;
+                const waNum = data.whatsapp ? String(data.whatsapp).replace(/\s/g, '') : "0";
+                const tgLink = data.telegram || "#";
+                const appLink = data.appLink || "#";
+                const fbLink = data.facebook || "#";
+                const ytLink = data.youtube || "#";
+                const waLink = `https://wa.me/${waNum}`;
+
+                const promoContainer = document.getElementById('promo-banner-container');
+                const promoImg = document.getElementById('promo-banner-img');
+                const promoLink = document.getElementById('promo-banner-link');
+                if(data.promoImageUrl && promoContainer && promoImg && promoLink) {
+                    promoImg.src = data.promoImageUrl;
+                    promoLink.href = data.promoImageLink || "#";
+                    promoContainer.classList.remove('hidden');
+                } else if(promoContainer) {
+                    promoContainer.classList.add('hidden');
+                }
+
+                document.getElementById('home-whatsapp').href = waLink;
+                document.getElementById('home-telegram').href = tgLink;
+                
+                const homeAppBtn = document.getElementById('home-app-dl');
+                homeAppBtn.href = appLink;
+                homeAppBtn.onclick = (e) => { if(appLink === "#") { e.preventDefault(); Swal.fire('Notice', 'App coming soon!', 'info'); } };
+
+                document.getElementById('link-whatsapp').href = waLink;
+                document.getElementById('link-telegram').href = tgLink;
+
+                document.getElementById('about-facebook').href = fbLink;
+                document.getElementById('about-youtube').href = ytLink;
+                document.getElementById('about-telegram').href = tgLink;
+                document.getElementById('about-whatsapp').href = waLink;
+                document.getElementById('contact-whatsapp').href = waLink;
+                document.getElementById('contact-telegram').href = tgLink;
+                document.getElementById('contact-facebook').href = fbLink;
+            }
+        }, (error) => {
+            console.error("App settings load error:", error);
+        });
+
+        loadGamesAndCategories();
+        loadTutorials();
+        loadBanners();
+        loadRecentOrdersGlobal(); 
+    }
+
+    async function loadGamesAndCategories() {
+        const listContainer = document.getElementById('services-list');
+        listContainer.innerHTML = `<div class="grid grid-cols-3 gap-3">${Array.from({length:6},()=>`<div class="vx-skeleton aspect-square"></div>`).join("")}</div>`;
+        gamesData = {};
+
+        try {
+            const [categoriesSnap, servicesSnap] = await Promise.all([
+                db.collection("categories").orderBy("slot").get(),
+                db.collection("services").get()
+            ]);
+
+            if (servicesSnap.empty) {
+                listContainer.innerHTML = `<div class="col-span-3 text-center text-gray-400">No Games Found</div>`;
+                return;
+            }
+
+            const categoriesMap = new Map();
+            categoriesSnap.forEach(doc => {
+                categoriesMap.set(doc.id, { ...doc.data(), games: [] });
+            });
+            
+            let uncategorizedGames = [];
+
+            servicesSnap.forEach(doc => {
+                const game = { id: doc.id, ...doc.data() };
+                gamesData[doc.id] = game;
+                
+                if (game.categoryId && categoriesMap.has(game.categoryId)) {
+                    categoriesMap.get(game.categoryId).games.push(game);
+                } else {
+                    uncategorizedGames.push(game);
+                }
+            });
+
+            listContainer.innerHTML = "";
+
+            categoriesMap.forEach((category) => {
+                if (category.games.length > 0) {
+                    let gamesHTML = '';
+                    category.games.forEach(item => {
+                        gamesHTML += `
+                         <div onclick="openTopUpPage('${item.id}', '${item.name}', '${item.image}')" class="bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer transform hover:-translate-y-1 transition-all duration-300 border border-gray-100 group">
+                            <div class="w-full aspect-square bg-gray-50 overflow-hidden relative">
+                                <img src="${item.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/200'">
+                            </div>
+                            <div class="p-2 text-center bg-white border-t border-gray-50">
+                                <p class="text-[10px] font-bold text-gray-700 truncate">${item.name}</p>
+                            </div>
+                        </div>`;
+                    });
+
+                    listContainer.innerHTML += `
+                    <div>
+                        <h3 class="font-bold text-gray-700 text-lg border-l-4 border-sky-500 pl-2 mb-3">${category.name}</h3>
+                        <div class="grid grid-cols-3 gap-3 px-1">
+                            ${gamesHTML}
+                        </div>
+                    </div>`;
+                }
+            });
+            
+             if(uncategorizedGames.length > 0) {
+                let gamesHTML = '';
+                uncategorizedGames.forEach(item => {
+                    gamesHTML += `
+                     <div onclick="openTopUpPage('${item.id}', '${item.name}', '${item.image}')" class="bg-white rounded-lg shadow-sm overflow-hidden cursor-pointer transform hover:-translate-y-1 transition-all duration-300 border border-gray-100 group">
+                        <div class="w-full aspect-square bg-gray-50 overflow-hidden relative">
+                            <img src="${item.image}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" onerror="this.src='https://placehold.co/200'">
+                        </div>
+                        <div class="p-2 text-center bg-white border-t border-gray-50">
+                            <p class="text-[10px] font-bold text-gray-700 truncate">${item.name}</p>
+                        </div>
+                    </div>`;
+                });
+                listContainer.innerHTML += `
+                <div>
+                    <h3 class="font-bold text-gray-500 text-lg border-l-4 border-gray-400 pl-2 mb-3">Others</h3>
+                    <div class="grid grid-cols-3 gap-3 px-1">
+                        ${gamesHTML}
+                    </div>
+                </div>`;
+            }
+
+        } catch (error) {
+            console.error("Failed to load games and categories:", error);
+            listContainer.innerHTML = `<div class="text-center text-red-500">Failed to load games. Please try again later.</div>`;
+        }
+    }
+
+    function loadTutorials() {
+        db.collection("tutorials").onSnapshot((snapshot) => {
+            const container = document.getElementById('tutorial-list-container');
+            container.innerHTML = "";
+            snapshot.forEach(doc => {
+                const data = doc.data();
+                container.innerHTML += `
+                    <div class="mx-5 bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 mb-6">
+                        <div class="relative w-full h-48 bg-gray-200 group cursor-pointer" onclick="window.open('${data.link}', '_blank')">
+                            <img src="${data.thumbnail}" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center"><i class="fas fa-play text-white text-4xl"></i></div>
+                        </div>
+                        <div class="p-4 text-center"><h3 class="font-bold text-gray-800">${data.title}</h3></div>
+                    </div>`;
+            });
+        }, (error) => {
+            console.error("Tutorials load error:", error);
+        });
+    }
+
+    function selectPaymentMode(mode) {
+        selectedPaymentMode = mode;
+        const walletCard = document.getElementById('pay-mode-wallet');
+        const instantCard = document.getElementById('pay-mode-instant');
+        const balanceInfo = document.getElementById('wallet-balance-info');
+
+        if(mode === 'wallet') {
+            walletCard.classList.add('selected');
+            instantCard.classList.remove('selected');
+            balanceInfo.classList.remove('hidden');
+        } else {
+            instantCard.classList.add('selected');
+            walletCard.classList.remove('selected');
+            balanceInfo.classList.add('hidden');
+        }
+    }
+
+    function openTopUpPage(gameId, gameName, gameImg) {
+        selectedGameId = gameId;
+        selectedGameName = gameName;
+        selectedProduct = null;
+        selectedGameType = gamesData[gameId].type || 'uid'; 
+        selectedPaymentMode = 'wallet';
+        selectPaymentMode('wallet');
+
+        document.getElementById('total-price').innerText = "0";
+        document.getElementById('game-player-id').value = "";
+        document.getElementById('topup-game-title').innerText = gameName;
+        document.getElementById('topup-sub-title').innerText = gameName + " ";
+        document.getElementById('topup-game-img').src = gameImg;
+
+        const playerSection = document.getElementById('player-id-section');
+        playerSection.classList.toggle('hidden', selectedGameType === 'code');
+        
+        if (selectedGameType === 'code') {
+            document.getElementById('topup-sub-title').innerText += "(Instant Voucher)";
+        } else if (selectedGameType === 'auto-topup') {
+            document.getElementById('topup-sub-title').innerText += "(Auto Delivery)";
+        } else {
+            document.getElementById('topup-sub-title').innerText += "(Player ID)";
+        }
+
+        const rulesBox = document.getElementById('game-rules-box');
+        const rulesText = document.getElementById('game-rules-text');
+        if(gamesData[gameId] && gamesData[gameId].rules) {
+            rulesText.innerText = gamesData[gameId].rules;
+            rulesBox.classList.remove('hidden');
+        } else {
+            rulesBox.classList.add('hidden');
+        }
+        
+        const uidCheckBtn = document.getElementById('uidCheckBtn');
+        uidCheckBtn.innerHTML = "Check to Player Name";
+        uidCheckBtn.classList.remove("bg-black");
+        uidCheckBtn.classList.add("bg-gradient-to-r", "from-blue-400", "to-teal-400");
+
+        showSec('topup');
+        
+        const grid = document.getElementById('products-grid');
+        const loader = document.getElementById('product-loader');
+        grid.innerHTML = "";
+        loader.classList.remove('hidden');
+
+        // FIX: orderBy('price') সরানো হয়েছে — Firestore orderBy ফিল্ড না থাকলে
+        // ডকুমেন্ট চুপচাপ বাদ দিয়ে দেয় এবং দাম অনুযায়ী সাজিয়ে দিত।
+        // এখন সব প্রোডাক্ট নামিয়ে ক্লায়েন্ট-সাইডে আপলোডের সময় (createdAt) অনুযায়ী সাজানো হয়,
+        // তাই যেভাবে আপলোড করা হয় সেভাবেই (প্রথম আপলোড = প্রথমে) দেখাবে।
+        db.collection('services').doc(gameId).collection('products').get()
+            .then((snapshot) => {
+                loader.classList.add('hidden');
+                if(snapshot.empty) {
+                    grid.innerHTML = `<div class="col-span-2 text-center text-gray-400 py-4">No packages available</div>`;
+                    return;
+                }
+
+                let products = [];
+                snapshot.forEach(doc => products.push({ id: doc.id, ...doc.data() }));
+
+                products.sort((a, b) => {
+                    const getTs = (p) => (p.createdAt && typeof p.createdAt.toMillis === 'function') ? p.createdAt.toMillis() : null;
+                    const ta = getTs(a), tb = getTs(b);
+                    if (ta !== null && tb !== null) return ta - tb; // পুরনো (আগে আপলোড) আগে
+                    if (ta !== null) return -1;
+                    if (tb !== null) return 1;
+                    // createdAt না থাকলে admin প্যানেলের order/slot ফিল্ড ব্যবহার হবে
+                    const oa = (a.order !== undefined) ? a.order : (a.slot !== undefined ? a.slot : null);
+                    const ob = (b.order !== undefined) ? b.order : (b.slot !== undefined ? b.slot : null);
+                    if (oa !== null && ob !== null) return oa - ob;
+                    return 0;
+                });
+
+                products.forEach(prod => {
+                    const card = document.createElement('div');
+                    card.className = "product-card";
+                    card.onclick = () => selectProduct(card, prod.name, prod.price, prod.id);
+                    
+                    let stockBadge = "";
+                    if(selectedGameType === 'code' || selectedGameType === 'auto-topup') {
+                         const count = prod.stockCount || 0;
+                         stockBadge = (count > 0) ? `<span class="text-[9px] text-green-600 bg-green-100 px-1 rounded">In Stock</span>` : `<span class="text-[9px] text-red-500 bg-red-100 px-1 rounded">Out of Stock</span>`;
+                    }
+
+                    // FIX: নাম উপরে সম্পূর্ণ (বড় হলে ভেতরে wrap হবে), নিচে স্টক ব্যাজ ও দাম —
+                    // বক্সের বাইরে চলে যাবে না।
+                    card.innerHTML = `
+                        <div class="flex items-start w-full min-w-0">
+                            <div class="product-bullet mt-0.5"></div>
+                            <span class="text-xs font-bold text-gray-600 break-words leading-snug flex-1 min-w-0">${prod.name}</span>
+                        </div>
+                        <div class="flex items-center justify-between w-full gap-2">
+                            <div class="min-w-0 flex items-center">${stockBadge}</div>
+                            <span class="text-sky-600 font-bold text-sm flex-shrink-0">৳${prod.price}</span>
+                        </div>`;
+                    grid.appendChild(card);
+                });
+            })
+            .catch((error) => {
+                loader.classList.add('hidden');
+                console.error("Products load error:", error);
+                grid.innerHTML = `<div class="col-span-2 text-center text-red-500 py-4 text-xs">Failed to load packages. Please try again.</div>`;
+            });
+    }
+
+    function selectProduct(element, name, price, id) {
+        document.querySelectorAll('.product-card').forEach(el => el.classList.remove('selected'));
+        element.classList.add('selected');
+        selectedProduct = { id: id, name: name, price: parseInt(price) };
+        document.getElementById('total-price').innerText = selectedProduct.price;
+    }
+
+    async function processOrder() {
+        let playerId = "N/A";
+        
+        if(selectedGameType === 'uid' || selectedGameType === 'auto-topup') {
+            playerId = document.getElementById('game-player-id').value.trim();
+            if(!playerId) return Swal.fire({ icon: 'warning', title: 'Missing ID', text: 'Please enter Player ID!' });
+        } else {
+            playerId = "Voucher Request";
+        }
+        
+        if(!selectedProduct) return Swal.fire({ icon: 'warning', title: 'Select Pack', text: 'Please select a recharge package!' });
+
+        if (selectedPaymentMode === 'wallet') {
+            if(userBalance < selectedProduct.price) return Swal.fire({ icon: 'error', title: 'Low Balance', text: 'Please Add Money first.' });
+            
+            const result = await Swal.fire({
+                title: 'Confirm Purchase?',
+                html: `Item: ${selectedProduct.name}<br>Price: ৳${selectedProduct.price}`,
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonColor: '#03a9f4',
+                confirmButtonText: 'Yes, Buy Now'
+            });
+
+            if (result.isConfirmed) {
+                Swal.showLoading();
+                if (selectedGameType === 'code') {
+                    processVoucherOrder();
+                } else if (selectedGameType === 'auto-topup') {
+                    processAutoTopUpOrder(playerId);
+                } else {
+                    processUidOrder(playerId);
+                }
+            }
+        } else {
+            openInstantGatewayModal(playerId);
+        }
+    }
+
+    // FIX: Transaction ID দিয়ে পেমেন্ট খুঁজতে সাহায্যকারী ফাংশন —
+    // বড় হাতের/ছোট হাতের কেস ও স্পেস ঠিক করে ৩ ভাবে চেষ্টা করে এবং error ধরে।
+    function findPaymentByTrx(trx) {
+        const ref = rtdb.ref('XNXANIKPAY');
+        const variants = [];
+        const add = (v) => { if (v && !variants.includes(v)) variants.push(v); };
+        add(trx.trim());
+        add(trx.trim().toUpperCase());
+        add(trx.trim().toLowerCase());
+
+        return new Promise((resolve, reject) => {
+            let i = 0;
+            const tryNext = () => {
+                if (i >= variants.length) return resolve(null);
+                ref.orderByChild('txid').equalTo(variants[i]).once('value')
+                    .then((snap) => {
+                        if (snap.exists()) return resolve(snap);
+                        i++;
+                        tryNext();
+                    })
+                    .catch(reject);
+            };
+            tryNext();
+        });
+    }
+
+    async function openInstantGatewayModal(playerId) {
+        let adminNumbers = {};
+        try {
+            const doc = await db.collection("admin").doc("payment").get();
+            if(doc.exists) adminNumbers = doc.data();
+        } catch(e) { console.error(e); }
+
+        const bkashNum = adminNumbers.bkash || "01xxxxxxxxx";
+        const nagadNum = adminNumbers.nagad || "01xxxxxxxxx";
+        const rocketNum = adminNumbers.rocket || "01xxxxxxxxx";
+
+        let currentSelectedMethod = 'bKash';
+        let activeBgColor = '#e2136e';
+        let activeNum = bkashNum;
+
+        const updateModalUI = () => {
+            const numberSpan = document.getElementById('gateway-num-display');
+            const cardBkash = document.getElementById('gw-card-bkash');
+            const cardNagad = document.getElementById('gw-card-nagad');
+            const cardRocket = document.getElementById('gw-card-rocket');
+
+            if(numberSpan) numberSpan.innerText = activeNum;
+
+            if(cardBkash && cardNagad && cardRocket) {
+                cardBkash.style.borderColor = currentSelectedMethod === 'bKash' ? '#e2136e' : '#e2e8f0';
+                cardBkash.style.background = currentSelectedMethod === 'bKash' ? '#fdf2f8' : '#ffffff';
+
+                cardNagad.style.borderColor = currentSelectedMethod === 'Nagad' ? '#f7941d' : '#e2e8f0';
+                cardNagad.style.background = currentSelectedMethod === 'Nagad' ? '#fff7ed' : '#ffffff';
+
+                cardRocket.style.borderColor = currentSelectedMethod === 'Rocket' ? '#8c3494' : '#e2e8f0';
+                cardRocket.style.background = currentSelectedMethod === 'Rocket' ? '#faf5ff' : '#ffffff';
+            }
+        };
+
+        const { value: formValues } = await Swal.fire({
+            title: 'Instant Payment',
+            html: `
+                <div class="text-left text-xs text-gray-600 mb-3 space-y-2">
+                    <p><b>Payable Amount:</b> <span class="text-sky-600 font-bold text-sm">৳${selectedProduct.price}</span></p>
+                    <p class="text-[11px] text-gray-500">নিচের মেথড সিলেক্ট করে Send Money করুন:</p>
+                    
+                    <div class="grid grid-cols-3 gap-2 my-2">
+                        <div id="gw-card-bkash" onclick="window.selectGwMethod('bKash', '${bkashNum}', '#e2136e')" class="p-2 rounded-xl border-2 cursor-pointer text-center flex flex-col items-center justify-center transition">
+                            <img src="https://i.ibb.co.com/G3RRGjJ4/bkash.png" class="w-8 h-8 object-contain mb-1">
+                            <span class="text-[11px] font-bold text-gray-700">bKash</span>
+                        </div>
+                        <div id="gw-card-nagad" onclick="window.selectGwMethod('Nagad', '${nagadNum}', '#f7941d')" class="p-2 rounded-xl border-2 cursor-pointer text-center flex flex-col items-center justify-center transition">
+                            <img src="https://i.ibb.co.com/PzT7ZqF9/nagad.png" class="w-10 h-8 object-contain mb-1">
+                            <span class="text-[11px] font-bold text-gray-700">Nagad</span>
+                        </div>
+                        <div id="gw-card-rocket" onclick="window.selectGwMethod('Rocket', '${rocketNum}', '#8c3494')" class="p-2 rounded-xl border-2 cursor-pointer text-center flex flex-col items-center justify-center transition">
+                            <img src="https://i.ibb.co.com/35XXn8VS/rocket.png" class="w-7 h-8 object-contain mb-1">
+                            <span class="text-[11px] font-bold text-gray-700">Rocket</span>
+                        </div>
+                    </div>
+
+                    <div class="p-3 rounded-lg border border-gray-200 flex justify-between items-center bg-gray-50">
+                        <div>
+                            <p class="text-[10px] text-gray-500 font-semibold" id="gw-method-title-label">bKash Personal Number</p>
+                            <p id="gateway-num-display" class="font-mono font-bold text-base tracking-wider text-gray-800">${bkashNum}</p>
+                        </div>
+                        <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('gateway-num-display').innerText); Swal.fire({toast:true, title:'Number Copied!', icon:'success', position:'top-end', showConfirmButton:false, timer:1000});" class="bg-white p-2 rounded shadow-sm text-sky-600 hover:bg-gray-100">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <input id="swal-trx-id" class="w-full bg-gray-50 border border-gray-200 p-2.5 rounded-lg text-sm uppercase focus:outline-none focus:border-sky-500 font-bold" placeholder="Enter Transaction ID (TrxID)">
+            `,
+            didOpen: () => {
+                window.selectGwMethod = (met, num, col) => {
+                    currentSelectedMethod = met;
+                    activeNum = num;
+                    activeBgColor = col;
+                    document.getElementById('gw-method-title-label').innerText = `${met} Personal Number`;
+                    updateModalUI();
+                };
+                updateModalUI();
+            },
+            focusConfirm: false,
+            showCancelButton: true,
+            confirmButtonText: 'Verify & Confirm Order',
+            confirmButtonColor: '#03a9f4',
+            preConfirm: () => {
+                const trxId = document.getElementById('swal-trx-id').value.trim().toUpperCase();
+                if (!trxId) {
+                    Swal.showValidationMessage('Please enter Transaction ID!');
+                }
+                return { method: currentSelectedMethod, trxId: trxId };
+            }
+        });
+
+        if (formValues) {
+            Swal.fire({
+                title: 'পেমেন্ট যাচাই করা হচ্ছে...',
+                text: 'দয়া করে অপেক্ষা করুন।',
+                didOpen: () => { Swal.showLoading() }
+            });
+            const payMethod = formValues.method;
+            const trxId = formValues.trxId;
+
+            try {
+                const existingTrxCheck = await db.collection('orders').where('trxId', '==', trxId).limit(1).get();
+                const existingDepCheck = await db.collection('deposits').where('trxId', '==', trxId).limit(1).get();
+                if (!existingTrxCheck.empty || !existingDepCheck.empty) {
+                    return Swal.fire('ব্যবহৃত', 'এই ট্রানজেকশন আইডিটি ইতিমধ্যে ব্যবহার করা হয়েছে।', 'error');
+                }
+
+                const snapshot = await findPaymentByTrx(trxId);
+                if (!snapshot) {
+                    return Swal.fire('পাওয়া যায়নি', 'আপনার ট্রানজেকশন আইডিটি ফায়ারবেসে খুঁজে পাওয়া যায়নি। সঠিক ট্রানজেকশন আইডি দিন।', 'error');
+                }
+                
+                let paymentData = null;
+                snapshot.forEach((childSnapshot) => {
+                    paymentData = childSnapshot.val();
+                });
+
+                if (!paymentData || !paymentData.amount) {
+                    return Swal.fire('ত্রুটি', 'পেমেন্টের তথ্য সঠিক নয়।', 'error');
+                }
+
+                const paidAmount = parseInt(paymentData.amount);
+                if (isNaN(paidAmount) || paidAmount < selectedProduct.price) {
+                    return Swal.fire('অপর্যাপ্ত পরিমাণ', `আপনি পেমেন্ট করেছেন ৳${paidAmount}, কিন্তু প্যাকেজ মূল্য ৳${selectedProduct.price}!`, 'error');
+                }
+
+                if (selectedGameType === 'code') {
+                    await processVoucherOrderInstant(playerId, payMethod, trxId);
+                } else if (selectedGameType === 'auto-topup') {
+                    await processAutoTopUpOrderInstant(playerId, payMethod, trxId);
+                } else {
+                    await processUidOrderInstant(playerId, payMethod, trxId);
+                }
+            } catch (err) {
+                console.error("Instant payment error:", err);
+                Swal.fire('Error', err.message || 'পেমেন্ট যাচাই করতে সমস্যা হয়েছে।', 'error');
+            }
+        }
+    }
+    
+    async function processVoucherOrderInstant(playerId, payMethod, trxId) {
+        const stockRef = db.collection('services').doc(selectedGameId).collection('products').doc(selectedProduct.id).collection('stock');
+        const availableStockSnap = await stockRef.where('status', '==', 'available').limit(1).get();
+
+        if (availableStockSnap.empty) {
+            return Swal.fire('Out of Stock', 'Sorry, this product is currently unavailable.', 'error');
+        }
+
+        const stockDoc = availableStockSnap.docs[0];
+        const voucherCode = stockDoc.data().code;
+        
+        await stockDoc.ref.delete();
+        await db.collection('services').doc(selectedGameId).collection('products').doc(selectedProduct.id).update({
+            stockCount: firebase.firestore.FieldValue.increment(-1)
+        });
+
+        await db.collection('orders').add({
+            userId: currentUser.uid, userName: currentUser.email, gameName: selectedGameName, gameId: selectedGameId,
+            productName: selectedProduct.name, price: selectedProduct.price, playerId: "Voucher Request", type: 'code',
+            status: 'success', redeemCode: voucherCode, paymentMethod: payMethod, trxId: trxId, date: new Date()
+        });
+
+        Swal.fire('Success', 'Payment & Order Successful! Check History for Voucher Code.', 'success');
+        showSec('home');
+    }
+
+    async function processUidOrderInstant(playerId, payMethod, trxId) {
+        await db.collection('orders').add({
+            userId: currentUser.uid, userName: currentUser.email, gameName: selectedGameName, gameId: selectedGameId,
+            playerId: playerId, productName: selectedProduct.name, price: selectedProduct.price, type: 'uid',
+            status: 'pending', paymentMethod: payMethod, trxId: trxId, date: new Date()
+        });
+
+        Swal.fire('Success', 'Order Placed Successfully! Payment Verified.', 'success');
+        showSec('home');
+    }
+
+    async function processAutoTopUpOrderInstant(playerId, payMethod, trxId) {
+        const settingsDoc = await db.collection("settings").doc("general").get();
+        if (!settingsDoc.exists) {
+            return Swal.fire('Configuration Error', 'Admin settings not found.', 'error');
+        }
+        const settings = settingsDoc.data();
+        const apiKey = settings.autoTopUpApiKey;
+        const apiUrl = settings.autoTopUpApiUrl;
+        const callbackUrl = settings.autoTopUpCallbackUrl;
+
+        const stockRef = db.collection('services').doc(selectedGameId).collection('products').doc(selectedProduct.id).collection('stock');
+        const availableStockSnap = await stockRef.where('status', '==', 'available').limit(1).get();
+
+        if (availableStockSnap.empty) {
+            return Swal.fire('Out of Stock', 'Sorry, this product is currently unavailable.', 'error');
+        }
+        const stockDoc = availableStockSnap.docs[0];
+        const uniPinCode = stockDoc.data().code;
+
+        await stockDoc.ref.delete();
+        await db.collection('services').doc(selectedGameId).collection('products').doc(selectedProduct.id).update({
+            stockCount: firebase.firestore.FieldValue.increment(-1)
+        });
+
+        const orderRef = await db.collection('orders').add({
+            userId: currentUser.uid, userName: currentUser.email, gameName: selectedGameName, gameId: selectedGameId,
+            playerId: playerId, productName: selectedProduct.name, price: selectedProduct.price, type: 'auto-topup',
+            status: 'pending', paymentMethod: payMethod, trxId: trxId, date: new Date(), usedUniPinCode: uniPinCode 
+        });
+
+        if (apiKey && apiUrl && callbackUrl) {
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ api: apiKey, playerid: playerId, code: uniPinCode, orderid: orderRef.id, url: callbackUrl })
+            }).catch(err => console.error("Auto TopUp API Error:", err));
+        }
+
+        Swal.fire({toast:true,position:'top',icon:'info',title:'Order submitted — waiting for provider confirmation',showConfirmButton:false,timer:2600});
+        showSec('history');
+    }
+    
+    async function processVoucherOrder() {
+        const stockRef = db.collection('services').doc(selectedGameId).collection('products').doc(selectedProduct.id).collection('stock');
+        const availableStockSnap = await stockRef.where('status', '==', 'available').limit(1).get();
+
+        if (availableStockSnap.empty) {
+            return Swal.fire('Out of Stock', 'Sorry, this product is currently unavailable.', 'error');
+        }
+
+        const stockDoc = availableStockSnap.docs[0];
+        const voucherCode = stockDoc.data().code;
+        const userRef = db.collection('users').doc(currentUser.uid);
+        
+        try {
+            await db.runTransaction(async (t) => {
+                const uDoc = await t.get(userRef);
+                const newBal = uDoc.data().balance - selectedProduct.price;
+                if(newBal < 0) throw new Error("Insufficient Balance");
+
+                t.update(userRef, { balance: newBal });
+                t.delete(stockDoc.ref); 
+                t.update(db.collection('services').doc(selectedGameId).collection('products').doc(selectedProduct.id), {
+                    stockCount: firebase.firestore.FieldValue.increment(-1)
+                });
+            });
+
+            await db.collection('orders').add({
+                userId: currentUser.uid, userName: currentUser.email, gameName: selectedGameName, gameId: selectedGameId,
+                productName: selectedProduct.name, price: selectedProduct.price, playerId: "Voucher Request", type: 'code',
+                status: 'success', redeemCode: voucherCode, date: new Date()
+            });
+
+            Swal.fire('Success', 'Voucher Purchased! Check History for Code.', 'success');
+            showSec('home');
+
+        } catch (e) {
+            Swal.fire('Error', 'Transaction Failed: ' + e.message, 'error');
+        }
+    }
+
+    function processUidOrder(playerId) {
+        const newBalance = userBalance - selectedProduct.price;
+        db.collection('users').doc(currentUser.uid).update({ balance: newBalance })
+        .then(() => {
+            return db.collection('orders').add({
+                userId: currentUser.uid, userName: currentUser.email, gameName: selectedGameName, gameId: selectedGameId,
+                playerId: playerId, productName: selectedProduct.name, price: selectedProduct.price, type: 'uid',
+                status: 'pending', date: new Date()
+            });
+        })
+        .then(() => {
+            Swal.fire('Success', 'Order Placed Successfully!', 'success');
+            showSec('home');
+        })
+        .catch(err => Swal.fire('Error', err.message, 'error'));
+    }
+
+    async function processAutoTopUpOrder(playerId) {
+        const settingsDoc = await db.collection("settings").doc("general").get();
+        if (!settingsDoc.exists) {
+            return Swal.fire('Configuration Error', 'Admin settings not found. Please contact support.', 'error');
+        }
+        const settings = settingsDoc.data();
+        const apiKey = settings.autoTopUpApiKey;
+        const apiUrl = settings.autoTopUpApiUrl;
+        const callbackUrl = settings.autoTopUpCallbackUrl;
+
+        const stockRef = db.collection('services').doc(selectedGameId).collection('products').doc(selectedProduct.id).collection('stock');
+        const availableStockSnap = await stockRef.where('status', '==', 'available').limit(1).get();
+
+        if (availableStockSnap.empty) {
+            return Swal.fire('Out of Stock', 'Sorry, this product is currently unavailable.', 'error');
+        }
+        const stockDoc = availableStockSnap.docs[0];
+        const uniPinCode = stockDoc.data().code;
+
+        const userRef = db.collection('users').doc(currentUser.uid);
+        const orderRef = db.collection('orders').doc(); 
+
+        try {
+            await db.runTransaction(async (t) => {
+                const userDoc = await t.get(userRef);
+                const newBalance = userDoc.data().balance - selectedProduct.price;
+                if (newBalance < 0) throw new Error("Insufficient Balance");
+
+                t.update(userRef, { balance: newBalance });
+                t.delete(stockDoc.ref);
+                t.update(db.collection('services').doc(selectedGameId).collection('products').doc(selectedProduct.id), {
+                    stockCount: firebase.firestore.FieldValue.increment(-1)
+                });
+                t.set(orderRef, {
+                    userId: currentUser.uid, userName: currentUser.email, gameName: selectedGameName, gameId: selectedGameId,
+                    playerId: playerId, productName: selectedProduct.name, price: selectedProduct.price, type: 'auto-topup',
+                    status: 'pending', date: new Date(), usedUniPinCode: uniPinCode 
+                });
+            });
+
+            if(apiKey && apiUrl && callbackUrl) {
+                const payload = {
+                    api: apiKey,
+                    playerid: playerId,
+                    code: uniPinCode,
+                    orderid: orderRef.id, 
+                    url: callbackUrl
+                };
+
+                fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }).catch(err => console.error("Auto TopUp API Error:", err)); 
+            }
+
+            Swal.fire({toast:true,position:'top',icon:'info',title:'Order submitted — awaiting provider confirmation',showConfirmButton:false,timer:2600});
+            showSec('history');
+
+        } catch (e) {
+            Swal.fire('Transaction Failed', e.message, 'error');
+        }
+    }
+
+    function uidCheck() {
+        const uid = document.getElementById("game-player-id").value;
+        const box = document.getElementById("uidCheckBtn");
+
+        if (!uid) {
+            box.innerHTML = "Please enter a UID!";
+            box.classList.remove("bg-black");
+            box.classList.add("bg-gradient-to-r", "from-blue-400", "to-teal-400");
+            return;
+        }
+
+        box.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Name is loading...';
+        box.classList.remove("bg-black");
+        box.classList.add("bg-gradient-to-r", "from-blue-400", "to-teal-400");
+
+        const apiURL = `https://bhauxinfo2.vercel.app/bhau?uid=${uid}&region=BD`;
+
+        fetch(apiURL)
+            .then(res => res.json())
+            .then(data => {
+                let name =
+                    (data.basicInfo && data.basicInfo.nickname) ||
+                    data.nickname ||
+                    "Invalid UID ";
+
+                box.classList.remove("bg-gradient-to-r", "from-blue-400", "to-teal-400");
+                box.classList.add("bg-black");
+                box.innerHTML = name; 
+            })
+            .catch(() => {
+                box.innerHTML = "No nickname found!";
+                box.classList.remove("bg-black");
+                box.classList.add("bg-gradient-to-r", "from-blue-400", "to-teal-400");
+            });
+    }
+
+    async function exportUserDataTxt(){
+      if(!currentUser)return Swal.fire('Sign in required','Please sign in to export your data.','info');
+      const btnText='VIMAX TOPUP - MY ACCOUNT DATA';
+      try{
+        const [userDoc,ordersSnap,depositsSnap]=await Promise.all([
+          db.collection('users').doc(currentUser.uid).get(),
+          db.collection('orders').where('userId','==',currentUser.uid).get(),
+          db.collection('deposits').where('userId','==',currentUser.uid).get()
+        ]);
+        const user=userDoc.exists?userDoc.data():{};
+        const fmtDate=v=>{try{return v&&v.toDate?v.toDate().toLocaleString():v?new Date(v).toLocaleString():'N/A'}catch(_){return 'N/A'}};
+        const lines=[btnText,'='.repeat(42),'Exported: '+new Date().toLocaleString(),'','PROFILE','Name: '+(user.name||currentUser.displayName||'N/A'),'Email: '+(currentUser.email||'N/A'),'Phone: '+(user.phone||'N/A'),'UID: '+currentUser.uid,'Email verified: '+(currentUser.emailVerified||currentUser.emailVerified===false?String(currentUser.emailVerified):String(currentUser.emailVerified)),'Wallet balance: BDT '+(user.balance??0),'','ORDERS','='.repeat(42)];
+        if(ordersSnap.empty)lines.push('No orders found.');
+        ordersSnap.forEach(d=>{const x=d.data();lines.push('Order ID: '+d.id,'Game: '+(x.gameName||'N/A'),'Product: '+(x.productName||'N/A'),'Player ID: '+(x.playerId||'N/A'),'Amount: BDT '+(x.price??0),'Status: '+(x.status||'N/A'),'Date: '+fmtDate(x.date),'Transaction: '+(x.trxId||'N/A'),'-'.repeat(28));});
+        lines.push('','DEPOSIT HISTORY','='.repeat(42));
+        if(depositsSnap.empty)lines.push('No deposits found.');
+        depositsSnap.forEach(d=>{const x=d.data();lines.push('Deposit ID: '+d.id,'Amount: BDT '+(x.amount??0),'Method: '+(x.method||'N/A'),'Status: '+(x.status||'N/A'),'Transaction: '+(x.trxId||'N/A'),'Date: '+fmtDate(x.date),'-'.repeat(28));});
+        lines.push('','This file contains the account data available in Vimax TopUp. Keep it private.');
+        const blob=new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='vimax-topup-my-data-'+new Date().toISOString().slice(0,10)+'.txt';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);authToast('Your TXT export is ready','success');
+      }catch(e){console.error(e);Swal.fire('Export failed',e.message||'Could not export your data.','error');}
+    }
+
+    function showSec(secId) {
+        document.querySelectorAll('main section').forEach(s => s.classList.add('hidden'));
+        document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active-tab'));
+        document.getElementById(secId + '-sec').classList.remove('hidden');
+        const navKey = secId === 'addmoney' ? 'addmoney' : (secId === 'tutorial' ? 'tutorial' : secId);
+        const navBtn = document.getElementById('nav-' + navKey);
+        if(navBtn) navBtn.classList.add('active-tab');
+        
+        if(secId === 'addmoney') {
+            if(isAutoPayEnabled) {
+                document.getElementById('auto-payment-view').classList.remove('hidden');
+                document.getElementById('manual-payment-view').classList.add('hidden');
+                resetAutoAddMoney();
+            } else {
+                document.getElementById('auto-payment-view').classList.add('hidden');
+                document.getElementById('manual-payment-view').classList.remove('hidden');
+                resetAddMoney();
+                loadDepositHistory(); 
+                toggleAddMoneyView('form');
+            }
+        }
+        if(secId === 'history') {
+            loadHistory();
+        }
+        window.scrollTo(0, 0);
+    }
+    
+    function loadHistory() {
+        const list = document.getElementById('history-list');
+        if (!currentUser) return;
+
+        list.innerHTML = '<div class="text-center py-4"><i class="fas fa-spinner fa-spin text-sky-500"></i> Loading History...</div>';
+
+        db.collection('orders').where('userId', '==', currentUser.uid).limit(50).get()
+            .then(snapshot => {
+                if (snapshot.empty) {
+                    list.innerHTML = `<div class="flex flex-col items-center justify-center py-10 text-gray-400"><i class="fas fa-shopping-basket text-4xl mb-3 opacity-30"></i><p>No orders found yet.</p></div>`;
+                    return;
+                }
+
+                const orders = [];
+                snapshot.forEach(doc => {
+                    orders.push(doc.data());
+                });
+
+                orders.sort((a, b) => {
+                    const dateA = a.date ? a.date.toDate() : new Date(0);
+                    const dateB = b.date ? b.date.toDate() : new Date(0);
+                    return dateB - dateA;
+                });
+
+                list.innerHTML = "";
+                
+                orders.forEach(d => {
+                    let statusColor = "bg-yellow-100 text-yellow-700 border-yellow-500";
+                    let icon = "fa-clock";
+
+                    const status = d.status ? d.status.toLowerCase() : 'pending';
+                    if (status === 'success' || status === 'complete' || status === 'completed') {
+                        statusColor = "bg-green-100 text-green-700 border-green-500";
+                        icon = "fa-check-circle";
+                    } else if (status === 'cancel' || status === 'rejected') {
+                        statusColor = "bg-red-100 text-red-700 border-red-500";
+                        icon = "fa-times-circle";
+                    }
+
+                    let dateStr = "N/A";
+                    if (d.date && d.date.toDate) {
+                        dateStr = d.date.toDate().toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true });
+                    }
+
+                    let detailsInfo = d.redeemCode ? `
+                        <div class="mt-2 bg-green-50 border border-green-200 rounded p-2 text-center">
+                            <p class="text-[10px] text-green-600 font-bold uppercase">Your Voucher Code</p>
+                            <p class="text-sm font-mono font-bold text-gray-800 select-all tracking-wider break-all">${d.redeemCode}</p>
+                        </div>` : `
+                        <div class="mt-1 inline-block bg-gray-50 border border-gray-200 rounded px-2 py-0.5">
+                            <p class="text-[10px] text-gray-500 font-mono">ID: <span class="text-gray-700 font-bold select-all">${d.playerId}</span></p>
+                        </div>`;
+
+                    list.innerHTML += `
+                        <div class="bg-white rounded-xl shadow-sm border border-gray-100 mb-4 overflow-hidden relative">
+                            <div class="absolute left-0 top-0 bottom-0 w-1.5 ${statusColor.split(' ')[2]}"></div>
+                            <div class="p-3 pl-4">
+                                <div class="flex justify-between items-start mb-2">
+                                    <div>
+                                        <h4 class="font-bold text-gray-800 text-sm flex items-center gap-1"><i class="fas fa-gamepad text-sky-500 text-xs"></i> ${d.gameName}</h4>
+                                        <p class="text-[10px] text-gray-400 mt-0.5"><i class="far fa-calendar-alt"></i> ${dateStr}</p>
+                                    </div>
+                                    <span class="${statusColor.split(' border')[0]} text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wide flex items-center gap-1"><i class="fas ${icon}"></i> ${d.status}</span>
+                                </div>
+                                <div class="h-px bg-gray-100 w-full my-2"></div>
+                                <div class="flex justify-between items-center">
+                                    <div class="w-full">
+                                        <p class="text-xs font-bold text-gray-700">${d.productName}</p>
+                                        ${detailsInfo}
+                                    </div>
+                                    <div class="text-right min-w-[60px]">
+                                        <p class="text-[10px] text-gray-400 mb-0.5">Price</p>
+                                        <p class="text-lg font-bold text-sky-600">৳${d.price}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`;
+                });
+            })
+            .catch(error => {
+                console.error("Error loading order history: ", error);
+                list.innerHTML = `<div class="text-center text-red-500 py-4 text-xs font-mono">Error: ${error.message}</div>`;
+            });
+    }
+
+    function loadRecentOrdersGlobal() {
+        const container = document.getElementById('latest-orders-list');
+        db.collection('orders').orderBy('date', 'desc').limit(5)
+          .onSnapshot((snapshot) => {
+              if (snapshot.empty) {
+                  container.innerHTML = '<div class="text-center text-gray-400 text-xs py-2">No recent orders</div>'; return;
+              }
+              container.innerHTML = ""; 
+              snapshot.forEach(doc => {
+                  const data = doc.data();
+                  let displayName = "Customer";
+                  if(data.userName) { displayName = data.userName.includes('@') ? data.userName.split('@')[0] : data.userName; }
+                  const firstChar = displayName.charAt(0).toUpperCase();
+                  let statusText = (data.status || 'pending').toLowerCase();
+                  let statusBadgeClass = 'bg-red-500 text-white';
+                  if (['success', 'complete', 'completed'].includes(statusText)) {
+                      statusBadgeClass = 'bg-[#198754] text-white';
+                      statusText = 'completed';
+                  } else if (['pending', 'processing'].includes(statusText)) {
+                      statusBadgeClass = 'bg-[#ffc107] text-gray-800';
+                      statusText = 'processing';
+                  }
+                  container.innerHTML += `<div class="bg-white p-3 rounded-xl shadow-[0_2px_10px_rgba(0,0,0,0.03)] border border-gray-100 flex items-center justify-between"><div class="flex items-center gap-3 overflow-hidden"><div class="w-11 h-11 min-w-[44px] bg-[#0d6efd] rounded-full flex items-center justify-center text-white text-lg font-sans font-medium shadow-sm">${firstChar}</div><div class="flex flex-col truncate"><span class="text-gray-600 font-bold text-sm truncate">${displayName}</span><span class="text-gray-500 text-[11px] font-medium truncate">${data.productName} - ${data.price} ৳</span></div></div><div class="${statusBadgeClass} px-3 py-1 rounded-full text-[10px] font-bold capitalize shadow-sm whitespace-nowrap ml-2">${statusText}</div></div>`;
+              });
+          }, (error) => {
+               console.error("Error loading recent orders: ", error);
+               container.innerHTML = `<div class="text-center text-red-500 py-4 text-xs font-mono">Could not load recent orders.</div>`;
+          });
+    }
+
+    function toggleFabMenu() {
+        const fabContainer = document.getElementById('fab-container');
+        const helpText = document.getElementById('fab-help-text');
+        fabContainer.classList.toggle('is-open');
+
+        if (fabContainer.classList.contains('is-open')) {
+            helpText.classList.add('opacity-0');
+        } else {
+            helpText.classList.remove('opacity-0');
+        }
+    }
+    
+    function loadBanners() {
+        db.collection("banners").onSnapshot((snapshot) => {
+            const wrapper = document.getElementById('slider-wrapper');
+            let slidesHTML = "";
+            snapshot.forEach((doc) => { if(doc.data().image) slidesHTML += `<img src="${doc.data().image}" class="w-full h-full object-cover flex-shrink-0">`; });
+            if(slidesHTML) { wrapper.innerHTML = slidesHTML; startSlider(); }
+        }, (error) => {
+            console.error("Banners load error:", error);
+        });
+    }
+    
+    let sliderInterval;
+    function startSlider() {
+        clearInterval(sliderInterval);
+        let idx = 0;
+        const wrapper = document.getElementById('slider-wrapper');
+        const count = wrapper.children.length;
+        if(count <= 1) return;
+        sliderInterval = setInterval(() => {
+            idx = (idx + 1) % count;
+            wrapper.style.transform = `translateX(-${idx * 100}%)`;
+        }, 3000);
+    }
+
+    function toggleAddMoneyView(view) {
+        const addMoneyContent = document.getElementById('add-money-content');
+        const historyContent = document.getElementById('deposit-history-content');
+        const btnAddMoney = document.getElementById('btn-addmoney-view');
+        const btnHistory = document.getElementById('btn-history-view');
+
+        if (view === 'form') {
+            addMoneyContent.classList.remove('hidden');
+            historyContent.classList.add('hidden');
+            btnAddMoney.classList.add('bg-white', 'shadow', 'text-sky-600');
+            btnHistory.classList.remove('bg-white', 'shadow', 'text-sky-600');
+        } else {
+            addMoneyContent.classList.add('hidden');
+            historyContent.classList.remove('hidden');
+            btnHistory.classList.add('bg-white', 'shadow', 'text-sky-600');
+            btnAddMoney.classList.remove('bg-white', 'shadow', 'text-sky-600');
+        }
+    }
+    
+    function loadDepositHistory() {
+        const list = document.getElementById('deposit-history-list');
+        if (!currentUser) return;
+        list.innerHTML = '<div class="text-center py-4"><i class="fas fa-spinner fa-spin text-sky-500"></i> Loading History...</div>';
+
+        // FIX: where + orderBy একসাথে ব্যবহার হলে Firestore-এ composite index লাগে, না থাকলে query fail করে।
+        // তাই orderBy সরিয়ে ক্লায়েন্ট-সাইডে সাজানো হয়েছে।
+        db.collection('deposits').where('userId', '==', currentUser.uid).get()
+            .then(snapshot => {
+                if (snapshot.empty) {
+                    list.innerHTML = `<div class="flex flex-col items-center justify-center py-10 text-gray-400"><i class="fas fa-receipt text-4xl mb-3 opacity-30"></i><p>No deposit history found.</p></div>`;
+                    return;
+                }
+
+                const deposits = [];
+                snapshot.forEach(doc => {
+                    deposits.push(doc.data());
+                });
+
+                deposits.sort((a, b) => {
+                    const dateA = a.date ? a.date.toDate() : new Date(0);
+                    const dateB = b.date ? b.date.toDate() : new Date(0);
+                    return dateB - dateA;
+                });
+
+                list.innerHTML = "";
+                deposits.forEach(d => {
+                    let statusColor = "bg-yellow-100 text-yellow-700";
+                    let icon = "fa-clock";
+
+                    const status = d.status ? d.status.toLowerCase() : 'pending';
+                    if (status === 'success' || status === 'approved') {
+                        statusColor = "bg-green-100 text-green-700";
+                        icon = "fa-check-circle";
+                    } else if (status === 'rejected') {
+                        statusColor = "bg-red-100 text-red-700";
+                        icon = "fa-times-circle";
+                    }
+                    
+                    let dateStr = "N/A";
+                    if (d.date && d.date.toDate) {
+                        dateStr = d.date.toDate().toLocaleString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+                    }
+                    
+                    const method = d.method || 'Manual';
+                    let trxText = method.toLowerCase().includes('auto') 
+                        ? `<p class="text-[10px] text-gray-500 font-mono select-all">Auto TrxID: <span class="text-gray-700 font-semibold">${d.trxId}</span></p>`
+                        : `<p class="text-[10px] text-gray-500 font-mono select-all">TrxID: <span class="text-gray-700 font-semibold">${d.trxId}</span></p>`;
+
+                    list.innerHTML += `
+                        <div class="bg-white p-3 rounded-xl shadow-sm border border-gray-100 flex items-center justify-between">
+                            <div class="flex-grow">
+                                <div class="flex justify-between items-center mb-1">
+                                    <p class="text-lg font-bold text-sky-600">৳${d.amount}</p>
+                                    <span class="${statusColor} text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide flex items-center gap-1"><i class="fas ${icon}"></i> ${d.status}</span>
+                                </div>
+                                ${trxText}
+                                <p class="text-[10px] text-gray-400 mt-1">${dateStr}</p>
+                            </div>
+                        </div>`;
+                });
+            })
+            .catch(error => {
+                console.error("Error loading deposit history: ", error);
+                list.innerHTML = `<div class="text-center text-red-500 py-4 text-xs font-mono">Error: ${error.message}</div>`;
+            });
+    }
+
+    function showPaymentForm(methodName, logoUrl) {
+        document.getElementById('payment-methods-grid').classList.add('hidden');
+        document.getElementById('payment-form-container').classList.remove('hidden');
+        document.getElementById('form-logo').src = logoUrl;
+        document.getElementById('form-method-name').innerText = methodName;
+        db.collection("admin").doc("payment").get().then(doc => {
+            if(doc.exists) document.getElementById('admin-number').innerText = doc.data()[methodName.toLowerCase()] || "01xxxxxxxxx";
+        }).catch(err => console.error("Admin payment info error:", err));
+    }
+
+    function resetAddMoney() {
+        document.getElementById('payment-methods-grid').classList.remove('hidden');
+        document.getElementById('payment-form-container').classList.add('hidden');
+        document.getElementById('dep-amount').value = "";
+        document.getElementById('dep-trx').value = "";
+    }
+
+    // FIX: Add Money (Manual) — সম্পূর্ণ নতুন করে সাজানো হয়েছে:
+    // ১) Amount এখন দুই পাশেই parseInt করে মিলানো হয় (string/number type mismatch সমস্যা দূর)
+    // ২) TrxID বড়/ছোট হাতের কেস ও স্পেস — সব ভ্যারিয়েন্ট দিয়ে খোঁজা হয়
+    // ৩) .once এর error ধরা হয় — আর spinner ঝুলে থাকবে না
+    // ৪) ব্যালেন্স ও ডিপোজিট একসাথে transaction-এ atomic ভাবে লেখা হয়
+    function submitDeposit() {
+        const amtRaw = document.getElementById('dep-amount').value;
+        const trx = document.getElementById('dep-trx').value.trim().toUpperCase();
+        const requestedAmount = parseInt(amtRaw);
+        if(!amtRaw || !trx || isNaN(requestedAmount)) return Swal.fire('Error', 'সব ঘর সঠিকভাবে পূরণ করুন।', 'warning');
+        
+        Swal.fire({
+            title: 'যাচাই করা হচ্ছে...',
+            text: 'দয়া করে অপেক্ষা করুন।',
+            didOpen: () => { Swal.showLoading() }
+        });
+
+        db.collection('deposits').where('trxId', '==', trx).limit(1).get()
+        .then(existing => {
+            if(!existing.empty) throw new Error('DUPLICATE_TRX');
+            return findPaymentByTrx(trx);
+        })
+        .then(snapshot => {
+            if(!snapshot) throw new Error('TRX_NOT_FOUND');
+
+            let paymentData = null;
+            snapshot.forEach((child) => { paymentData = child.val(); });
+
+            if(!paymentData || !paymentData.amount) throw new Error('BAD_PAYMENT_DATA');
+
+            const verifiedAmount = parseInt(paymentData.amount);
+            if(isNaN(verifiedAmount) || verifiedAmount !== requestedAmount) {
+                throw new Error('AMOUNT_MISMATCH:' + verifiedAmount);
+            }
+
+            const userRef = db.collection('users').doc(currentUser.uid);
+            const depositRef = db.collection('deposits').doc();
+            return db.runTransaction(async (t) => {
+                const uDoc = await t.get(userRef);
+                if (!uDoc.exists) throw new Error('USER_NOT_FOUND');
+                const newBal = (uDoc.data().balance || 0) + verifiedAmount;
+                t.update(userRef, { balance: newBal });
+                t.set(depositRef, {
+                    userId: currentUser.uid, amount: verifiedAmount, trxId: trx,
+                    status: 'approved', method: 'Manual Auto Gateway', date: new Date(), userEmail: currentUser.email
+                });
+            });
+        })
+        .then(() => {
+            Swal.fire('সফল', `আপনার একাউন্টে ৳${requestedAmount} সফলভাবে যোগ করা হয়েছে।`, 'success');
+            resetAddMoney();
+            loadDepositHistory(); 
+            toggleAddMoneyView('history');
+        })
+        .catch(err => {
+            console.error("Deposit error:", err);
+            const msg = err && err.message ? err.message : '';
+            if (msg === 'DUPLICATE_TRX') {
+                Swal.fire('ব্যবহৃত', 'এই ট্রানজেকশন আইডিটি ইতিমধ্যে ব্যবহার করা হয়েছে।', 'error');
+            } else if (msg === 'TRX_NOT_FOUND') {
+                Swal.fire('পাওয়া যায়নি', 'আপনার ট্রানজেকশন আইডিটি ফায়ারবেসে খুঁজে পাওয়া যায়নি। সঠিক ট্রানজেকশন আইডি দিন।', 'error');
+            } else if (msg === 'BAD_PAYMENT_DATA') {
+                Swal.fire('ত্রুটি', 'পেমেন্টের তথ্য সঠিক নয়।', 'error');
+            } else if (msg.startsWith('AMOUNT_MISMATCH')) {
+                const serverAmt = msg.split(':')[1];
+                Swal.fire('পরিমাণ মেলেনি', `আপনি দিয়েছেন ৳${requestedAmount}, কিন্তু সার্ভারে পাওয়া গেছে ৳${serverAmt}!`, 'error');
+            } else if (msg === 'USER_NOT_FOUND') {
+                Swal.fire('ত্রুটি', 'ইউজার একাউন্ট পাওয়া যায়নি। আবার লগইন করুন।', 'error');
+            } else {
+                Swal.fire('Error', msg || 'টাকা যোগ করতে সমস্যা হয়েছে। সাপোর্টে যোগাযোগ করুন।', 'error');
+            }
+        });
+    }
+
+    function copyNumber() {
+        navigator.clipboard.writeText(document.getElementById('admin-number').innerText);
+        Swal.fire({toast:true, title:'Copied', icon:'success', position:'top-end', showConfirmButton:false, timer:1000});
+    }
+
+    function showAutoPaymentForm(methodName, logoUrl) {
+        document.getElementById('auto-payment-methods-grid').classList.add('hidden');
+        document.getElementById('auto-payment-form-container').classList.remove('hidden');
+        document.getElementById('auto-form-logo').src = logoUrl;
+        document.getElementById('auto-form-method-name').innerText = methodName;
+        db.collection("admin").doc("payment").get().then(doc => {
+            if(doc.exists) {
+                document.getElementById('auto-admin-number').innerText = doc.data()[methodName.toLowerCase()] || "Not Set";
+            }
+        }).catch(err => console.error("Admin payment info error:", err));
+    }
+
+    function resetAutoAddMoney() {
+        document.getElementById('auto-payment-methods-grid').classList.remove('hidden');
+        document.getElementById('auto-payment-form-container').classList.add('hidden');
+        document.getElementById('auto-dep-trx').value = "";
+    }
+    
+    function copyAutoNumber() {
+        navigator.clipboard.writeText(document.getElementById('auto-admin-number').innerText);
+        Swal.fire({toast:true, title:'Copied', icon:'success', position:'top-end', showConfirmButton:false, timer:1000});
+    }
+
+    // FIX: Auto Payment Verify — error callback, কেস-ইনসেনসিটিভ TrxID সার্চ এবং
+    // ব্যালেন্স + ডিপোজিট একসাথে atomic transaction-এ লেখা হয়।
+    async function verifyAutoPayment() {
+        const trxId = document.getElementById('auto-dep-trx').value.trim().toUpperCase();
+        if(!trxId) return Swal.fire('ত্রুটি', 'দয়া করে ট্রানজেকশন আইডি লিখুন।', 'warning');
+
+        Swal.fire({
+            title: 'যাচাই করা হচ্ছে...',
+            text: 'দয়া করে অপেক্ষা করুন।',
+            didOpen: () => { Swal.showLoading() }
+        });
+
+        try {
+            const existingTrxCheck = await db.collection('deposits').where('trxId', '==', trxId).limit(1).get();
+            if (!existingTrxCheck.empty) {
+                return Swal.fire('ব্যবহৃত', 'এই ট্রানজেকশন আইডিটি ইতিমধ্যে ব্যবহার করা হয়েছে।', 'error');
+            }
+
+            const snapshot = await findPaymentByTrx(trxId);
+            if (!snapshot) {
+                return Swal.fire('পাওয়া যায়নি', 'আপনার ট্রানজেকশন আইডিটি খুঁজে পাওয়া যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।', 'error');
+            }
+            
+            let paymentData = null;
+            snapshot.forEach((childSnapshot) => {
+                paymentData = childSnapshot.val();
+            });
+
+            if (!paymentData || !paymentData.amount) {
+                return Swal.fire('ত্রুটি', 'পেমেন্ট এর তথ্য সঠিক নয়। সাপোর্টে যোগাযোগ করুন।', 'error');
+            }
+
+            const amountToAdd = parseInt(paymentData.amount);
+            if (isNaN(amountToAdd)) {
+                return Swal.fire('ত্রুটি', 'পেমেন্ট এর পরিমাণ সঠিক নয়। সাপোর্টে যোগাযোগ করুন।', 'error');
+            }
+
+            const userRef = db.collection('users').doc(currentUser.uid);
+            const depositRef = db.collection('deposits').doc();
+
+            await db.runTransaction(async (transaction) => {
+                const userDoc = await transaction.get(userRef);
+                if (!userDoc.exists) {
+                    throw new Error('USER_NOT_FOUND');
+                }
+                const newBalance = (userDoc.data().balance || 0) + amountToAdd;
+                transaction.update(userRef, { balance: newBalance });
+                transaction.set(depositRef, {
+                    userId: currentUser.uid,
+                    userEmail: currentUser.email,
+                    amount: amountToAdd,
+                    trxId: trxId,
+                    status: 'approved',
+                    method: 'Auto Pay',
+                    date: new Date()
+                });
+            });
+
+            Swal.fire('সফল', `আপনার একাউন্টে ৳${amountToAdd} সফলভাবে যোগ করা হয়েছে।`, 'success');
+            resetAutoAddMoney();
+            
+        } catch (error) {
+            console.error("Auto payment error:", error);
+            const msg = error && error.message ? error.message : '';
+            if (msg === 'USER_NOT_FOUND') {
+                Swal.fire('ত্রুটি', 'ইউজার একাউন্ট পাওয়া যায়নি। আবার লগইন করুন।', 'error');
+            } else {
+                Swal.fire('ব্যর্থ', 'টাকা যোগ করতে সমস্যা হয়েছে। অনুগ্রহ করে সাপোর্টে যোগাযোগ করুন।', 'error');
+            }
+        }
+    }
+</script>
+</body>
+</html>
